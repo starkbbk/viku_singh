@@ -32,7 +32,7 @@ const services = [
 
 export default function Services() {
     return (
-        <section id="services" className="py-20 md:py-32 relative">
+        <section id="services" className="py-20 md:py-32 relative overflow-hidden">
             {/* Background Glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent-purple/5 rounded-full blur-[120px] -z-10" />
 

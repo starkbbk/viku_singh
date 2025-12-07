@@ -26,7 +26,7 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className="py-20 md:py-32 relative">
+        <section id="contact" className="py-20 md:py-32 relative overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
                     {/* Contact Info */}

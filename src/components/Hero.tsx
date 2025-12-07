@@ -28,7 +28,7 @@ export default function Hero() {
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-black/40 z-10" /> {/* Overlay for contrast */}
                 <motion.div
-                    className="flex h-full w-[200%]"
+                    className="flex h-full w-fit"
                     animate={{ x: ["0%", "-50%"] }}
                     transition={{
                         repeat: Infinity,
@@ -37,7 +37,7 @@ export default function Hero() {
                     }}
                 >
                     {[...heroImages, ...heroImages].map((src, index) => (
-                        <div key={index} className="relative h-full w-1/4 flex-shrink-0">
+                        <div key={index} className="relative h-full w-screen md:w-[50vw] flex-shrink-0">
                             <Image
                                 src={src}
                                 alt={`Hero image ${index + 1}`}
@@ -55,7 +55,7 @@ export default function Hero() {
                 style={{ y }}
                 className="relative z-20 container mx-auto px-6 text-center"
             >
-                <div className="glass-panel inline-block px-6 py-10 md:px-16 md:py-20 rounded-2xl max-w-4xl mx-auto">
+                <div className="glass-panel inline-block px-4 py-8 md:px-16 md:py-20 rounded-2xl w-[90%] max-w-4xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
