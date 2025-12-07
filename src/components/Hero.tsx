@@ -55,7 +55,7 @@ export default function Hero() {
                 style={{ y }}
                 className="relative z-20 container mx-auto px-6 text-center"
             >
-                <div className="glass-panel inline-block px-8 py-12 md:px-16 md:py-20 rounded-2xl max-w-4xl mx-auto">
+                <div className="glass-panel inline-block px-6 py-10 md:px-16 md:py-20 rounded-2xl max-w-4xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ export default function Hero() {
                         <h2 className="text-accent-cyan font-medium tracking-widest mb-4 uppercase text-sm md:text-base">
                             Lifestyle & Portrait Photographer
                         </h2>
-                        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-6 text-white">
+                        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-6 text-white">
                             VIKU SINGH
                         </h1>
                         <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">

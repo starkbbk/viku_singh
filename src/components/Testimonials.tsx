@@ -79,7 +79,7 @@ export default function Testimonials() {
                                         ))}
                                     </div>
 
-                                    <p className="text-xl md:text-2xl text-gray-200 italic mb-8 leading-relaxed">
+                                    <p className="text-lg sm:text-xl md:text-2xl text-gray-200 italic mb-8 leading-relaxed">
                                         "{testimonials[currentIndex].content}"
                                     </p>
 
@@ -104,13 +104,13 @@ export default function Testimonials() {
                         {/* Navigation Buttons */}
                         <button
                             onClick={prevTestimonial}
-                            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 p-3 glass rounded-full hover:bg-white/10 transition-colors z-20"
+                            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 p-3 glass rounded-full hover:bg-white/10 transition-colors z-20 hidden md:block"
                         >
                             <ChevronLeft className="text-white" />
                         </button>
                         <button
                             onClick={nextTestimonial}
-                            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 p-3 glass rounded-full hover:bg-white/10 transition-colors z-20"
+                            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 p-3 glass rounded-full hover:bg-white/10 transition-colors z-20 hidden md:block"
                         >
                             <ChevronRight className="text-white" />
                         </button>

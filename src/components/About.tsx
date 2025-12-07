@@ -30,7 +30,7 @@ export default function About() {
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         {/* Image Column */}
                         <div className="relative group">
-                            <div className="relative h-[400px] md:h-[500px] w-full rounded-2xl overflow-hidden">
+                            <div className="relative h-[300px] md:h-[500px] w-full rounded-2xl overflow-hidden">
                                 <Image
                                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop"
                                     alt="Viku Singh"
@@ -74,7 +74,7 @@ export default function About() {
                             </div>
 
                             {/* Stats Grid */}
-                            <div className="grid grid-cols-3 gap-4 mt-10">
+                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10">
                                 {stats.map((stat, index) => (
                                     <div key={index} className="glass p-4 rounded-xl text-center hover:bg-white/5 transition-colors">
                                         <stat.icon className="w-6 h-6 text-accent-cyan mx-auto mb-2" />
