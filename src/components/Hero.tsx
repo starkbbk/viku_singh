@@ -7,10 +7,10 @@ import Link from "next/link";
 import { useRef } from "react";
 
 const heroImages = [
-    "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=2000&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1554048612-387768052bf7?q=80&w=2000&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2000&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=2000&auto=format&fit=crop",
+    "/portfolio/03124d5c-609f-44ca-ab19-cef83cdc2a2a.JPG",
+    "/portfolio/06dad40b-757a-4a53-8d2c-7d0ed7c80844.JPG",
+    "/portfolio/2965e099-b8f8-4a2a-a4a2-4111a9d78cf8.JPG",
+    "/portfolio/2f4a6773-39fc-49a2-aa82-76664b0b5bb8.JPG",
 ];
 
 export default function Hero() {

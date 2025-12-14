@@ -60,7 +60,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <h4 className="text-white font-semibold mb-1">Phone</h4>
-                                    <p className="text-gray-400">+1 (555) 123-4567</p>
+                                    <p className="text-gray-400">+91 98765 43210</p>
                                 </div>
                             </div>
 
@@ -70,7 +70,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <h4 className="text-white font-semibold mb-1">Studio</h4>
-                                    <p className="text-gray-400">123 Creative Ave, New York, NY 10012</p>
+                                    <p className="text-gray-400">New Delhi, India</p>
                                 </div>
                             </div>
                         </div>

@@ -12,49 +12,49 @@ const portfolioItems = [
         id: 1,
         title: "Urban Solitude",
         category: "Street",
-        src: "https://images.unsplash.com/photo-1445975849567-eb6b522b3041?q=80&w=1000&auto=format&fit=crop",
+        src: "/portfolio/38d8c8f1-d0be-48c0-aa1d-665a11551375.JPG",
     },
     {
         id: 2,
         title: "Ethereal Bride",
         category: "Wedding",
-        src: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1000&auto=format&fit=crop",
+        src: "/portfolio/5110bce8-fff9-4e1c-b40d-09d9e8b8f12a.JPG",
     },
     {
         id: 3,
         title: "Neon Nights",
         category: "Fashion",
-        src: "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=1000&auto=format&fit=crop",
+        src: "/portfolio/5efacc1a-c325-4410-a547-a02628630219.JPG",
     },
     {
         id: 4,
         title: "Golden Hour",
         category: "Portrait",
-        src: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop",
+        src: "/portfolio/6235e189-b240-455e-b119-4fd787d88662.JPG",
     },
     {
         id: 5,
         title: "City Rhythm",
         category: "Street",
-        src: "https://images.unsplash.com/photo-1475598322381-f1b499717dda?q=80&w=1000&auto=format&fit=crop",
+        src: "/portfolio/6c2a2cd6-faee-430e-b247-b24e83a15491.JPG",
     },
     {
         id: 6,
         title: "Vogue Edit",
         category: "Fashion",
-        src: "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1000&auto=format&fit=crop",
+        src: "/portfolio/7de304fd-77a7-4ac8-af6d-0d039ece7653.JPG",
     },
     {
         id: 7,
         title: "The Vows",
         category: "Wedding",
-        src: "https://images.unsplash.com/photo-1511285560982-1351cdeb9821?q=80&w=1000&auto=format&fit=crop",
+        src: "/portfolio/80a9d234-c9a9-492a-ad40-f34ee7b8a7ad.JPG",
     },
     {
         id: 8,
         title: "Raw Emotion",
         category: "Portrait",
-        src: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1000&auto=format&fit=crop",
+        src: "/portfolio/8dc0d1af-b3b4-4f60-a293-63973a3a282d.JPG",
     },
 ];
 
@@ -107,8 +107,8 @@ export default function Portfolio() {
                             key={category}
                             onClick={() => setActiveCategory(category)}
                             className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${activeCategory === category
-                                    ? "bg-accent-cyan text-black shadow-[0_0_20px_rgba(6,182,212,0.4)]"
-                                    : "glass text-gray-300 hover:bg-white/10"
+                                ? "bg-accent-cyan text-black shadow-[0_0_20px_rgba(6,182,212,0.4)]"
+                                : "glass text-gray-300 hover:bg-white/10"
                                 }`}
                         >
                             {category}
