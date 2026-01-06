@@ -32,7 +32,7 @@ export default function About() {
                         <div className="relative group">
                             <div className="relative h-[300px] md:h-[500px] w-full rounded-2xl overflow-hidden">
                                 <Image
-                                    src="/portfolio/35455759-90f9-47e3-a4d3-3f2f2dfc2136.JPG"
+                                    src="/portfolio/viku/a00fc7ab-36b7-4f5c-917c-85a99084a004.JPG"
                                     alt="Viku Singh"
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-105"
