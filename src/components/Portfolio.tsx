@@ -254,12 +254,7 @@ const portfolioItems = [
         category: "Event",
         src: "/portfolio/5041e700-0f34-49e8-a415-a5e1c9c87c28.JPG",
     },
-    {
-        id: 42,
-        title: "Captured Moment 42",
-        category: "Event",
-        src: "/portfolio/51065795-ec13-48c3-bd53-5a8c069837ba.JPG",
-    },
+
     {
         id: 43,
         title: "Captured Moment 43",
