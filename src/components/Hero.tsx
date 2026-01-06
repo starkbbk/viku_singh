@@ -7,14 +7,15 @@ import Link from "next/link";
 import { useRef } from "react";
 
 const heroImages = [
-    "/portfolio/Event/5110bce8-fff9-4e1c-b40d-09d9e8b8f12a.JPG",
-    "/portfolio/Street/7a034456-8798-446b-828d-a50fa626e893.JPG",
-    "/portfolio/Fashion/7c224c2a-3214-4990-885b-150a52cb6761.JPG",
-    "/portfolio/Event/026a01b4-7c2d-4117-a19a-7b9fa9a5c02d.JPG",
-    "/portfolio/Street/39ca6b35-d263-4291-a05a-b8a4f6cccc27.JPG",
-    "/portfolio/Fashion/8feaebae-e9f3-4952-80d0-a431bd69d6ba.JPG",
-    "/portfolio/Event/35455759-90f9-47e3-a4d3-3f2f2dfc2136.JPG",
-    "/portfolio/Street/9496e548-972f-42d9-92f1-34519ff23b7c.JPG",
+    "/portfolio/Background/026a01b4-7c2d-4117-a19a-7b9fa9a5c02d.JPG",
+    "/portfolio/Background/2de7bd2c-146f-4771-be6e-ea590c84a47c.JPG",
+    "/portfolio/Background/2f4a6773-39fc-49a2-aa82-76664b0b5bb8.JPG",
+    "/portfolio/Background/4aac5cd8-ecf6-40b5-a98d-db50214c9611.JPG",
+    "/portfolio/Background/6263c93c-afba-4572-a460-24a48ddd6eb2.JPG",
+    "/portfolio/Background/c37b6374-dee4-4f6f-b204-a1b39cb9d138.JPG",
+    "/portfolio/Background/d7b393da-2533-4024-9d80-f1aad6966bcf.JPG",
+    "/portfolio/Background/e9154f79-6eb2-4594-944f-82fb4e74e645.JPG",
+    "/portfolio/Background/e9e3e961-a0b5-46f4-9773-f0923a09a0d5.JPG",
 ];
 
 export default function Hero() {
