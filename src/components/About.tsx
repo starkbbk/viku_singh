@@ -45,7 +45,7 @@ export default function About() {
                                 <MapPin className="text-accent-cyan" />
                                 <div>
                                     <p className="text-xs text-gray-400 uppercase tracking-wider">Based in</p>
-                                    <p className="font-semibold">New York, NY</p>
+                                    <p className="font-semibold">New Delhi, India</p>
                                 </div>
                             </div>
                         </div>

@@ -61,8 +61,8 @@ const portfolioItems = [
     { id: 50, title: "Event Highlight 50", category: "Event", src: "/portfolio/Event/e9e3e961-a0b5-46f4-9773-f0923a09a0d5.JPG" },
     { id: 51, title: "Event Highlight 51", category: "Event", src: "/portfolio/Event/f94dece2-f49b-4fc6-84b1-2a7e51fd2db4.JPG" },
     { id: 52, title: "Event Highlight 52", category: "Event", src: "/portfolio/Event/fb81c0dc-11d4-4ac8-b4e2-ff6cb23204a7.JPG" },
-    { id: 53, title: "Event Highlight 53", category: "Event", src: "/portfolio/Event/16431339-d790-46ce-991c-8ebb6728086a.JPG" },
-    { id: 54, title: "Event Highlight 54", category: "Event", src: "/portfolio/Event/99992536-7df8-456e-8322-837748390beb.JPG" },
+    { id: 53, title: "Event Highlight 53", category: "Fashion", src: "/portfolio/Fashion/16431339-d790-46ce-991c-8ebb6728086a.JPG" },
+    { id: 54, title: "Event Highlight 54", category: "Fashion", src: "/portfolio/Fashion/99992536-7df8-456e-8322-837748390beb.JPG" },
     { id: 55, title: "Event Highlight 55", category: "Event", src: "/portfolio/Event/IMG_1596.JPG" },
     { id: 56, title: "Event Highlight 56", category: "Event", src: "/portfolio/Event/IMG_1597.JPG" },
     { id: 57, title: "Event Highlight 57", category: "Event", src: "/portfolio/Event/IMG_1598.JPG" },
@@ -88,56 +88,63 @@ const portfolioItems = [
 ];
 
 export default function Portfolio() {
-    const [activeCategory, setActiveCategory] = useState("All");
-    const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+    const [selectedCategory, setSelectedCategory] = useState("All");
+    const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+    const [visibleCount, setVisibleCount] = useState(12);
 
     const filteredItems =
-        activeCategory === "All"
+        selectedCategory === "All"
             ? portfolioItems
-            : portfolioItems.filter((item) => item.category === activeCategory);
+            : portfolioItems.filter((item) => item.category === selectedCategory);
 
-    const openLightbox = (index: number) => {
-        // Find the actual index in the full list if filtered
-        // For simplicity in this demo, we'll just use the filtered list index for navigation
-        // but we need to map it back to the filtered item
-        setSelectedImageIndex(index);
+    const displayedItems = filteredItems.slice(0, visibleCount);
+
+    const handleCategoryChange = (category: string) => {
+        setSelectedCategory(category);
+        setVisibleCount(12); // Reset visible count when changing category
     };
 
-    const closeLightbox = () => setSelectedImageIndex(null);
+    const handleShowMore = () => {
+        setVisibleCount((prev) => prev + 12);
+    };
+
+    const handleShowLess = () => {
+        setVisibleCount(12);
+    };
 
     const nextImage = () => {
-        if (selectedImageIndex !== null) {
-            setSelectedImageIndex((prev) =>
+        if (lightboxIndex !== null) {
+            setLightboxIndex((prev) =>
                 prev === filteredItems.length - 1 ? 0 : (prev as number) + 1
             );
         }
     };
 
     const prevImage = () => {
-        if (selectedImageIndex !== null) {
-            setSelectedImageIndex((prev) =>
+        if (lightboxIndex !== null) {
+            setLightboxIndex((prev) =>
                 prev === 0 ? filteredItems.length - 1 : (prev as number) - 1
             );
         }
     };
 
     return (
-        <section id="portfolio" className="py-20 bg-black/20">
+        <section id="portfolio" className="py-20 md:py-32 bg-zinc-950">
             <div className="container mx-auto px-6">
-                <div className="text-center mb-12">
+                <div className="text-center mb-16">
                     <h2 className="text-accent-cyan font-medium tracking-widest mb-2 uppercase">Portfolio</h2>
                     <h3 className="text-3xl md:text-4xl font-bold text-white">Selected Works</h3>
                 </div>
 
-                {/* Filters */}
+                {/* Filter Buttons */}
                 <div className="flex flex-wrap justify-center gap-4 mb-12">
                     {categories.map((category) => (
                         <button
                             key={category}
-                            onClick={() => setActiveCategory(category)}
-                            className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${activeCategory === category
-                                ? "bg-accent-cyan text-black shadow-[0_0_20px_rgba(6,182,212,0.4)]"
-                                : "glass text-gray-300 hover:bg-white/10"
+                            onClick={() => handleCategoryChange(category)}
+                            className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${selectedCategory === category
+                                ? "bg-accent-cyan text-black shadow-[0_0_20px_rgba(34,211,238,0.3)]"
+                                : "glass text-gray-400 hover:text-white hover:bg-white/10"
                                 }`}
                         >
                             {category}
@@ -146,56 +153,79 @@ export default function Portfolio() {
                 </div>
 
                 {/* Masonry Grid */}
-                <motion.div layout className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
-                    <AnimatePresence>
-                        {filteredItems.map((item, index) => (
+                <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+                    <AnimatePresence mode="popLayout">
+                        {displayedItems.map((item) => (
                             <motion.div
                                 layout
+                                key={item.id}
                                 initial={{ opacity: 0, scale: 0.8 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 exit={{ opacity: 0, scale: 0.8 }}
                                 transition={{ duration: 0.3 }}
-                                key={item.id}
-                                className="break-inside-avoid relative group rounded-xl overflow-hidden cursor-pointer"
-                                onClick={() => openLightbox(index)}
+                                className="break-inside-avoid relative group overflow-hidden rounded-xl cursor-pointer"
+                                onClick={() => setLightboxIndex(portfolioItems.indexOf(item))}
                             >
-                                <Image
-                                    src={item.src}
-                                    alt={item.title}
-                                    width={600}
-                                    height={800}
-                                    className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
-                                />
-                                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-center p-4">
-                                    <h4 className="text-xl font-bold text-white mb-1 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                        {item.title}
-                                    </h4>
-                                    <p className="text-accent-cyan text-sm uppercase tracking-wider translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
-                                        {item.category}
-                                    </p>
-                                    <div className="mt-4 p-2 bg-white/10 rounded-full backdrop-blur-sm translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-100">
-                                        <Maximize2 size={20} className="text-white" />
+                                <div className="relative aspect-[3/4] w-full">
+                                    <Image
+                                        src={item.src}
+                                        alt={item.title}
+                                        fill
+                                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    />
+                                    <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-center p-4">
+                                        <h4 className="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                            {item.title}
+                                        </h4>
+                                        <p className="text-accent-cyan text-sm translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                                            {item.category}
+                                        </p>
+                                        <div className="absolute top-4 right-4 p-2 bg-white/10 rounded-full backdrop-blur-md">
+                                            <Maximize2 size={16} className="text-white" />
+                                        </div>
                                     </div>
                                 </div>
                             </motion.div>
                         ))}
                     </AnimatePresence>
-                </motion.div>
+                </div>
+
+                {/* Show More / Show Less Buttons */}
+                {filteredItems.length > 12 && (
+                    <div className="flex justify-center mt-12 gap-4">
+                        {visibleCount < filteredItems.length ? (
+                            <button
+                                onClick={handleShowMore}
+                                className="px-8 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full text-white font-medium transition-all"
+                            >
+                                Show More
+                            </button>
+                        ) : (
+                            <button
+                                onClick={handleShowLess}
+                                className="px-8 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full text-white font-medium transition-all"
+                            >
+                                Show Less
+                            </button>
+                        )}
+                    </div>
+                )}
             </div>
 
             {/* Lightbox */}
             <AnimatePresence>
-                {selectedImageIndex !== null && (
+                {lightboxIndex !== null && (
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
-                        onClick={closeLightbox}
+                        onClick={() => setLightboxIndex(null)}
                     >
                         <button
                             className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors"
-                            onClick={closeLightbox}
+                            onClick={() => setLightboxIndex(null)}
                         >
                             <X size={40} />
                         </button>
@@ -211,7 +241,7 @@ export default function Portfolio() {
                         </button>
 
                         <motion.div
-                            key={selectedImageIndex}
+                            key={lightboxIndex}
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.2 }}
@@ -219,14 +249,14 @@ export default function Portfolio() {
                             onClick={(e) => e.stopPropagation()}
                         >
                             <Image
-                                src={filteredItems[selectedImageIndex].src}
-                                alt={filteredItems[selectedImageIndex].title}
+                                src={filteredItems[lightboxIndex]?.src || portfolioItems[lightboxIndex].src}
+                                alt={filteredItems[lightboxIndex]?.title || portfolioItems[lightboxIndex].title}
                                 fill
                                 className="object-contain"
                             />
                             <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent text-center">
-                                <h3 className="text-2xl font-bold text-white">{filteredItems[selectedImageIndex].title}</h3>
-                                <p className="text-accent-cyan">{filteredItems[selectedImageIndex].category}</p>
+                                <h3 className="text-2xl font-bold text-white">{filteredItems[lightboxIndex]?.title || portfolioItems[lightboxIndex].title}</h3>
+                                <p className="text-accent-cyan">{filteredItems[lightboxIndex]?.category || portfolioItems[lightboxIndex].category}</p>
                             </div>
                         </motion.div>
 
