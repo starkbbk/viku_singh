@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight, Maximize2 } from "lucide-react";
 import Image from "next/image";
 
-const categories = ["All", "Wedding", "Portrait", "Fashion", "Street"];
+const categories = ["All", "Event", "Street"];
 
 const portfolioItems = [
     {
@@ -17,19 +17,19 @@ const portfolioItems = [
     {
         id: 2,
         title: "Ethereal Bride",
-        category: "Wedding",
+        category: "Event",
         src: "/portfolio/5110bce8-fff9-4e1c-b40d-09d9e8b8f12a.JPG",
     },
     {
         id: 3,
         title: "Neon Nights",
-        category: "Fashion",
+        category: "Event",
         src: "/portfolio/5efacc1a-c325-4410-a547-a02628630219.JPG",
     },
     {
         id: 4,
         title: "Golden Hour",
-        category: "Portrait",
+        category: "Event",
         src: "/portfolio/6235e189-b240-455e-b119-4fd787d88662.JPG",
     },
     {
@@ -41,37 +41,37 @@ const portfolioItems = [
     {
         id: 6,
         title: "Vogue Edit",
-        category: "Fashion",
+        category: "Event",
         src: "/portfolio/7de304fd-77a7-4ac8-af6d-0d039ece7653.JPG",
     },
     {
         id: 7,
         title: "The Vows",
-        category: "Wedding",
+        category: "Event",
         src: "/portfolio/80a9d234-c9a9-492a-ad40-f34ee7b8a7ad.JPG",
     },
     {
         id: 8,
         title: "Raw Emotion",
-        category: "Portrait",
+        category: "Event",
         src: "/portfolio/8dc0d1af-b3b4-4f60-a293-63973a3a282d.JPG",
     },
     {
         id: 9,
         title: "Captured Moment 9",
-        category: "Wedding",
+        category: "Event",
         src: "/portfolio/026a01b4-7c2d-4117-a19a-7b9fa9a5c02d.JPG",
     },
     {
         id: 10,
         title: "Captured Moment 10",
-        category: "Portrait",
+        category: "Event",
         src: "/portfolio/03124d5c-609f-44ca-ab19-cef83cdc2a2a.JPG",
     },
     {
         id: 11,
         title: "Captured Moment 11",
-        category: "Fashion",
+        category: "Event",
         src: "/portfolio/06dad40b-757a-4a53-8d2c-7d0ed7c80844.JPG",
     },
     {
@@ -83,19 +83,19 @@ const portfolioItems = [
     {
         id: 13,
         title: "Captured Moment 13",
-        category: "Wedding",
+        category: "Event",
         src: "/portfolio/2965e099-b8f8-4a2a-a4a2-4111a9d78cf8.JPG",
     },
     {
         id: 14,
         title: "Captured Moment 14",
-        category: "Portrait",
+        category: "Event",
         src: "/portfolio/2f4a6773-39fc-49a2-aa82-76664b0b5bb8.JPG",
     },
     {
         id: 15,
         title: "Captured Moment 15",
-        category: "Fashion",
+        category: "Event",
         src: "/portfolio/35455759-90f9-47e3-a4d3-3f2f2dfc2136.JPG",
     },
     {
@@ -107,19 +107,19 @@ const portfolioItems = [
     {
         id: 17,
         title: "Captured Moment 17",
-        category: "Wedding",
+        category: "Event",
         src: "/portfolio/4aac5cd8-ecf6-40b5-a98d-db50214c9611.JPG",
     },
     {
         id: 18,
         title: "Captured Moment 18",
-        category: "Portrait",
+        category: "Event",
         src: "/portfolio/6263c93c-afba-4572-a460-24a48ddd6eb2.JPG",
     },
     {
         id: 19,
         title: "Captured Moment 19",
-        category: "Fashion",
+        category: "Event",
         src: "/portfolio/9e296412-8c86-4205-bf06-17916ef89b1a.JPG",
     },
     {
@@ -131,19 +131,19 @@ const portfolioItems = [
     {
         id: 21,
         title: "Captured Moment 21",
-        category: "Wedding",
+        category: "Event",
         src: "/portfolio/c37b6374-dee4-4f6f-b204-a1b39cb9d138.JPG",
     },
     {
         id: 22,
         title: "Captured Moment 22",
-        category: "Portrait",
+        category: "Event",
         src: "/portfolio/d1a6b195-a146-464a-ae86-789e607e10c5.JPG",
     },
     {
         id: 23,
         title: "Captured Moment 23",
-        category: "Fashion",
+        category: "Event",
         src: "/portfolio/d7c48394-07af-41fe-98e8-caea899dcca5.JPG",
     },
     {
@@ -155,19 +155,19 @@ const portfolioItems = [
     {
         id: 25,
         title: "Captured Moment 25",
-        category: "Wedding",
+        category: "Event",
         src: "/portfolio/df973b95-abae-4441-80fb-f7fb38dbbf55.JPG",
     },
     {
         id: 26,
         title: "Captured Moment 26",
-        category: "Portrait",
+        category: "Event",
         src: "/portfolio/e489ee6f-9740-4d48-a4d3-41decc6ce45b.JPG",
     },
     {
         id: 27,
         title: "Captured Moment 27",
-        category: "Fashion",
+        category: "Event",
         src: "/portfolio/e5e7e00f-6961-484b-9e27-e4f9b039fc4d.JPG",
     },
     {
@@ -179,19 +179,19 @@ const portfolioItems = [
     {
         id: 29,
         title: "Captured Moment 29",
-        category: "Wedding",
+        category: "Event",
         src: "/portfolio/e6c4d66f-29ff-49e7-809b-4e969c02cfe5.JPG",
     },
     {
         id: 30,
         title: "Captured Moment 30",
-        category: "Portrait",
+        category: "Event",
         src: "/portfolio/e9154f79-6eb2-4594-944f-82fb4e74e645.JPG",
     },
     {
         id: 31,
         title: "Captured Moment 31",
-        category: "Fashion",
+        category: "Event",
         src: "/portfolio/e9e3e961-a0b5-46f4-9773-f0923a09a0d5.JPG",
     },
     {
@@ -199,6 +199,240 @@ const portfolioItems = [
         title: "Captured Moment 32",
         category: "Street",
         src: "/portfolio/f94dece2-f49b-4fc6-84b1-2a7e51fd2db4.JPG",
+    },
+    {
+        id: 33,
+        title: "Captured Moment 33",
+        category: "Event",
+        src: "/portfolio/026c30df-6c91-4920-b34f-5ebf47e39607.JPG",
+    },
+    {
+        id: 34,
+        title: "Captured Moment 34",
+        category: "Event",
+        src: "/portfolio/16431339-d790-46ce-991c-8ebb6728086a.JPG",
+    },
+    {
+        id: 35,
+        title: "Captured Moment 35",
+        category: "Event",
+        src: "/portfolio/1f34c60f-c24a-49b5-92ce-77b57ee3e46b.JPG",
+    },
+    {
+        id: 36,
+        title: "Captured Moment 36",
+        category: "Event",
+        src: "/portfolio/227b6d87-68ed-4891-b238-b74993aff70c.JPG",
+    },
+    {
+        id: 37,
+        title: "Captured Moment 37",
+        category: "Event",
+        src: "/portfolio/2de7bd2c-146f-4771-be6e-ea590c84a47c.JPG",
+    },
+    {
+        id: 38,
+        title: "Captured Moment 38",
+        category: "Event",
+        src: "/portfolio/39ca6b35-d263-4291-a05a-b8a4f6cccc27.JPG",
+    },
+    {
+        id: 39,
+        title: "Captured Moment 39",
+        category: "Event",
+        src: "/portfolio/3ac5e3d0-938e-4c3c-ab84-250b37e48271.JPG",
+    },
+    {
+        id: 40,
+        title: "Captured Moment 40",
+        category: "Event",
+        src: "/portfolio/3d70932a-3772-4836-a5d8-6dac796b58c2.JPG",
+    },
+    {
+        id: 41,
+        title: "Captured Moment 41",
+        category: "Event",
+        src: "/portfolio/5041e700-0f34-49e8-a415-a5e1c9c87c28.JPG",
+    },
+    {
+        id: 42,
+        title: "Captured Moment 42",
+        category: "Event",
+        src: "/portfolio/51065795-ec13-48c3-bd53-5a8c069837ba.JPG",
+    },
+    {
+        id: 43,
+        title: "Captured Moment 43",
+        category: "Event",
+        src: "/portfolio/5c222b01-1759-4b10-a0b8-477a10fe0097.JPG",
+    },
+    {
+        id: 44,
+        title: "Captured Moment 44",
+        category: "Event",
+        src: "/portfolio/6861678f-0ebe-4873-9d9f-ed5d4063ccd1.JPG",
+    },
+    {
+        id: 45,
+        title: "Captured Moment 45",
+        category: "Event",
+        src: "/portfolio/7a034456-8798-446b-828d-a50fa626e893.JPG",
+    },
+    {
+        id: 46,
+        title: "Captured Moment 46",
+        category: "Event",
+        src: "/portfolio/80de770d-2e5c-4d0a-90c5-5b3c34a4be31.JPG",
+    },
+    {
+        id: 47,
+        title: "Captured Moment 47",
+        category: "Event",
+        src: "/portfolio/89bbbd20-b13c-4370-a9c9-3dcb63d10a51.JPG",
+    },
+    {
+        id: 48,
+        title: "Captured Moment 48",
+        category: "Event",
+        src: "/portfolio/9496e548-972f-42d9-92f1-34519ff23b7c.JPG",
+    },
+    {
+        id: 49,
+        title: "Captured Moment 49",
+        category: "Event",
+        src: "/portfolio/95d624e6-d3bd-4655-a975-052d215c5856.JPG",
+    },
+    {
+        id: 50,
+        title: "Captured Moment 50",
+        category: "Event",
+        src: "/portfolio/99992536-7df8-456e-8322-837748390beb.JPG",
+    },
+    {
+        id: 51,
+        title: "Captured Moment 51",
+        category: "Event",
+        src: "/portfolio/99e8fc96-c3c9-4309-9708-33e04f06f699.JPG",
+    },
+    {
+        id: 52,
+        title: "Captured Moment 52",
+        category: "Event",
+        src: "/portfolio/IMG_1586.JPG",
+    },
+    {
+        id: 53,
+        title: "Captured Moment 53",
+        category: "Event",
+        src: "/portfolio/IMG_1587.JPG",
+    },
+    {
+        id: 54,
+        title: "Captured Moment 54",
+        category: "Event",
+        src: "/portfolio/IMG_1588.JPG",
+    },
+    {
+        id: 55,
+        title: "Captured Moment 55",
+        category: "Event",
+        src: "/portfolio/IMG_1589.JPG",
+    },
+    {
+        id: 56,
+        title: "Captured Moment 56",
+        category: "Event",
+        src: "/portfolio/IMG_1590.JPG",
+    },
+    {
+        id: 57,
+        title: "Captured Moment 57",
+        category: "Event",
+        src: "/portfolio/IMG_1591.JPG",
+    },
+    {
+        id: 58,
+        title: "Captured Moment 58",
+        category: "Event",
+        src: "/portfolio/IMG_1592.JPG",
+    },
+    {
+        id: 59,
+        title: "Captured Moment 59",
+        category: "Event",
+        src: "/portfolio/IMG_1593.JPG",
+    },
+    {
+        id: 60,
+        title: "Captured Moment 60",
+        category: "Event",
+        src: "/portfolio/IMG_1594.JPG",
+    },
+    {
+        id: 61,
+        title: "Captured Moment 61",
+        category: "Event",
+        src: "/portfolio/IMG_1595.JPG",
+    },
+    {
+        id: 62,
+        title: "Captured Moment 62",
+        category: "Event",
+        src: "/portfolio/IMG_1596.JPG",
+    },
+    {
+        id: 63,
+        title: "Captured Moment 63",
+        category: "Event",
+        src: "/portfolio/IMG_1597.JPG",
+    },
+    {
+        id: 64,
+        title: "Captured Moment 64",
+        category: "Event",
+        src: "/portfolio/IMG_1598.JPG",
+    },
+    {
+        id: 65,
+        title: "Captured Moment 65",
+        category: "Event",
+        src: "/portfolio/a49d2f38-1d6b-4f22-ba62-61910b158113.JPG",
+    },
+    {
+        id: 66,
+        title: "Captured Moment 66",
+        category: "Event",
+        src: "/portfolio/a6d35c02-a9af-4001-b233-2fcbfcc4405a.JPG",
+    },
+    {
+        id: 67,
+        title: "Captured Moment 67",
+        category: "Event",
+        src: "/portfolio/c24c38dc-515f-4610-abac-c6bc036b197b.JPG",
+    },
+    {
+        id: 68,
+        title: "Captured Moment 68",
+        category: "Event",
+        src: "/portfolio/c982bc8d-0e1c-487f-90f9-17fa469ca166.JPG",
+    },
+    {
+        id: 69,
+        title: "Captured Moment 69",
+        category: "Event",
+        src: "/portfolio/d7b393da-2533-4024-9d80-f1aad6966bcf.JPG",
+    },
+    {
+        id: 70,
+        title: "Captured Moment 70",
+        category: "Event",
+        src: "/portfolio/deda56da-e267-4ce6-a046-e81066aff158.JPG",
+    },
+    {
+        id: 71,
+        title: "Captured Moment 71",
+        category: "Event",
+        src: "/portfolio/fb81c0dc-11d4-4ac8-b4e2-ff6cb23204a7.JPG",
     },
 ];
 
