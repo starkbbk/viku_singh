@@ -29,7 +29,7 @@ const portfolioItems = [
     { id: 18, title: "Event Highlight 18", category: "Event", src: "/portfolio/Event/5efacc1a-c325-4410-a547-a02628630219.JPG" },
     { id: 19, title: "Event Highlight 19", category: "Event", src: "/portfolio/Event/6235e189-b240-455e-b119-4fd787d88662.JPG" },
     { id: 20, title: "Event Highlight 20", category: "Event", src: "/portfolio/Event/6263c93c-afba-4572-a460-24a48ddd6eb2.JPG" },
-    { id: 21, title: "Event Highlight 21", category: "Event", src: "/portfolio/Event/6861678f-0ebe-4873-9d9f-ed5d4063ccd1.JPG" },
+
     { id: 22, title: "Event Highlight 22", category: "Event", src: "/portfolio/Event/6c2a2cd6-faee-430e-b247-b24e83a15491.JPG" },
     { id: 23, title: "Event Highlight 23", category: "Event", src: "/portfolio/Event/7de304fd-77a7-4ac8-af6d-0d039ece7653.JPG" },
     { id: 24, title: "Event Highlight 24", category: "Event", src: "/portfolio/Event/80a9d234-c9a9-492a-ad40-f34ee7b8a7ad.JPG" },

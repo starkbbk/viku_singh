@@ -1,0 +1,17 @@
+{
+  "to_delete": [
+    "Pictures/Event/6861678f-0ebe-4873-9d9f-ed5d4063ccd1.JPG",
+    "Pictures/Background/026a01b4-7c2d-4117-a19a-7b9fa9a5c02d.JPG",
+    "Pictures/Background/2de7bd2c-146f-4771-be6e-ea590c84a47c.JPG",
+    "Pictures/Background/2f4a6773-39fc-49a2-aa82-76664b0b5bb8.JPG",
+    "Pictures/Background/4aac5cd8-ecf6-40b5-a98d-db50214c9611.JPG",
+    "Pictures/Background/6263c93c-afba-4572-a460-24a48ddd6eb2.JPG",
+    "Pictures/Background/c37b6374-dee4-4f6f-b204-a1b39cb9d138.JPG",
+    "Pictures/Background/d7b393da-2533-4024-9d80-f1aad6966bcf.JPG",
+    "Pictures/Background/e9154f79-6eb2-4594-944f-82fb4e74e645.JPG",
+    "Pictures/Background/e9e3e961-a0b5-46f4-9773-f0923a09a0d5.JPG"
+  ],
+  "replacements": {
+    "Pictures/Event/6861678f-0ebe-4873-9d9f-ed5d4063ccd1.JPG": "Pictures/Event/5c222b01-1759-4b10-a0b8-477a10fe0097.JPG"
+  }
+}
