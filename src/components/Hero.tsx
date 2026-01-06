@@ -7,10 +7,14 @@ import Link from "next/link";
 import { useRef } from "react";
 
 const heroImages = [
-    "/portfolio/03124d5c-609f-44ca-ab19-cef83cdc2a2a.JPG",
-    "/portfolio/06dad40b-757a-4a53-8d2c-7d0ed7c80844.JPG",
-    "/portfolio/2965e099-b8f8-4a2a-a4a2-4111a9d78cf8.JPG",
-    "/portfolio/2f4a6773-39fc-49a2-aa82-76664b0b5bb8.JPG",
+    "/portfolio/Event/5110bce8-fff9-4e1c-b40d-09d9e8b8f12a.JPG",
+    "/portfolio/Street/7a034456-8798-446b-828d-a50fa626e893.JPG",
+    "/portfolio/Fashion/7c224c2a-3214-4990-885b-150a52cb6761.JPG",
+    "/portfolio/Event/026a01b4-7c2d-4117-a19a-7b9fa9a5c02d.JPG",
+    "/portfolio/Street/39ca6b35-d263-4291-a05a-b8a4f6cccc27.JPG",
+    "/portfolio/Fashion/8feaebae-e9f3-4952-80d0-a431bd69d6ba.JPG",
+    "/portfolio/Event/35455759-90f9-47e3-a4d3-3f2f2dfc2136.JPG",
+    "/portfolio/Street/9496e548-972f-42d9-92f1-34519ff23b7c.JPG",
 ];
 
 export default function Hero() {
