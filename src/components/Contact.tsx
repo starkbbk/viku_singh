@@ -2,61 +2,9 @@
 
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Instagram, Twitter, Facebook, Send } from "lucide-react";
-import { useState } from "react";
+
 
 export default function Contact() {
-    const [formState, setFormState] = useState({
-        name: "",
-        email: "",
-        phone: "",
-        type: "",
-        date: "",
-        message: "",
-    });
-
-    const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
-
-    const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault();
-        setStatus('loading');
-
-        try {
-            const res = await fetch('/api/send-email', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formState),
-            });
-
-            if (res.ok) {
-                setStatus('success');
-                setFormState({
-                    name: "",
-                    email: "",
-                    phone: "",
-                    type: "",
-                    date: "",
-                    message: "",
-                });
-                alert("Message sent successfully!");
-            } else {
-                setStatus('error');
-                alert("Failed to send message. Please try again.");
-            }
-        } catch (error) {
-            console.error(error);
-            setStatus('error');
-            alert("Something went wrong. Please try again later.");
-        } finally {
-            setStatus('idle');
-        }
-    };
-
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-        setFormState({ ...formState, [e.target.name]: e.target.value });
-    };
-
     return (
         <section id="contact" className="py-20 md:py-32 relative overflow-hidden">
             <div className="container mx-auto px-6">
@@ -125,100 +73,35 @@ export default function Contact() {
                         </div>
                     </motion.div>
 
-                    {/* Contact Form */}
+                    {/* Instagram CTA */}
                     <motion.div
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="glass-panel p-8 md:p-10 rounded-3xl"
+                        className="glass-panel p-8 md:p-12 rounded-3xl flex flex-col items-center justify-center text-center text-white"
                     >
-                        <form onSubmit={handleSubmit} className="space-y-6">
-                            <div className="grid md:grid-cols-2 gap-6">
-                                <div className="space-y-2">
-                                    <label className="text-sm text-gray-400 uppercase tracking-wider">Name</label>
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        required
-                                        className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent-cyan focus:bg-white/10 transition-all"
-                                        placeholder="John Doe"
-                                        onChange={handleChange}
-                                    />
-                                </div>
-                                <div className="space-y-2">
-                                    <label className="text-sm text-gray-400 uppercase tracking-wider">Email</label>
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        required
-                                        className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent-cyan focus:bg-white/10 transition-all"
-                                        placeholder="john@example.com"
-                                        onChange={handleChange}
-                                    />
-                                </div>
-                            </div>
+                        <div className="w-20 h-20 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 rounded-2xl mb-6 flex items-center justify-center shadow-lg">
+                            <Instagram size={40} className="text-white" />
+                        </div>
 
-                            <div className="grid md:grid-cols-2 gap-6">
-                                <div className="space-y-2">
-                                    <label className="text-sm text-gray-400 uppercase tracking-wider">Phone</label>
-                                    <input
-                                        type="tel"
-                                        name="phone"
-                                        className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent-cyan focus:bg-white/10 transition-all"
-                                        placeholder="+1 (555) 000-0000"
-                                        onChange={handleChange}
-                                    />
-                                </div>
-                                <div className="space-y-2">
-                                    <label className="text-sm text-gray-400 uppercase tracking-wider">Shoot Type</label>
-                                    <select
-                                        name="type"
-                                        className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent-cyan focus:bg-white/10 transition-all appearance-none"
-                                        onChange={handleChange}
-                                    >
-                                        <option value="" className="bg-gray-900">Select Type</option>
-                                        <option value="portrait" className="bg-gray-900">Portrait</option>
-                                        <option value="fashion" className="bg-gray-900">Fashion</option>
-                                        <option value="event" className="bg-gray-900">Event</option>
-                                    </select>
-                                </div>
-                            </div>
+                        <h3 className="text-2xl md:text-3xl font-bold mb-4">Chat on Instagram</h3>
+                        <p className="text-gray-300 mb-8 max-w-md">
+                            The quickest way to reach me! Send me a DM for bookings, collaborations, or just to say hi.
+                        </p>
 
-                            <div className="space-y-2">
-                                <label className="text-sm text-gray-400 uppercase tracking-wider">Preferred Date</label>
-                                <input
-                                    type="date"
-                                    name="date"
-                                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent-cyan focus:bg-white/10 transition-all"
-                                    onChange={handleChange}
-                                />
-                            </div>
-
-                            <div className="space-y-2">
-                                <label className="text-sm text-gray-400 uppercase tracking-wider">Message</label>
-                                <textarea
-                                    name="message"
-                                    rows={4}
-                                    required
-                                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent-cyan focus:bg-white/10 transition-all resize-none"
-                                    placeholder="Tell me about your project..."
-                                    onChange={handleChange}
-                                />
-                            </div>
-
-                            <button
-                                type="submit"
-                                disabled={status === 'loading'}
-                                className="w-full py-4 bg-accent-cyan text-black font-bold rounded-lg hover:bg-cyan-400 transition-colors flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
-                            >
-                                {status === 'loading' ? 'Sending...' : 'Send Message'}
-                                <Send size={18} />
-                            </button>
-                        </form>
+                        <a
+                            href="https://www.instagram.com/ind_god_vkt"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full sm:w-auto px-8 py-4 bg-accent-cyan text-black font-bold rounded-full hover:bg-cyan-400 transition-all flex items-center justify-center gap-2 transform hover:scale-105"
+                        >
+                            Send Message
+                            <Send size={18} />
+                        </a>
                     </motion.div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 }
