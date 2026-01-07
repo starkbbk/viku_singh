@@ -74,7 +74,7 @@ export default function Hero() {
                         </h1>
                         <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
                             Capturing raw emotions and fleeting moments through a cinematic lens.
-                            Based in New York, available worldwide.
+                            Based in New Delhi, available worldwide.
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
