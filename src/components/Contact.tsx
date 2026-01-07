@@ -14,11 +14,43 @@ export default function Contact() {
         message: "",
     });
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // Handle form submission logic here
-        console.log(formState);
-        alert("Message sent! (Demo only)");
+        setStatus('loading');
+
+        try {
+            const res = await fetch('/api/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formState),
+            });
+
+            if (res.ok) {
+                setStatus('success');
+                setFormState({
+                    name: "",
+                    email: "",
+                    phone: "",
+                    type: "",
+                    date: "",
+                    message: "",
+                });
+                alert("Message sent successfully!");
+            } else {
+                setStatus('error');
+                alert("Failed to send message. Please try again.");
+            }
+        } catch (error) {
+            console.error(error);
+            setStatus('error');
+            alert("Something went wrong. Please try again later.");
+        } finally {
+            setStatus('idle');
+        }
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -177,9 +209,10 @@ export default function Contact() {
 
                             <button
                                 type="submit"
-                                className="w-full py-4 bg-accent-cyan text-black font-bold rounded-lg hover:bg-cyan-400 transition-colors flex items-center justify-center gap-2"
+                                disabled={status === 'loading'}
+                                className="w-full py-4 bg-accent-cyan text-black font-bold rounded-lg hover:bg-cyan-400 transition-colors flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                             >
-                                Send Message
+                                {status === 'loading' ? 'Sending...' : 'Send Message'}
                                 <Send size={18} />
                             </button>
                         </form>
