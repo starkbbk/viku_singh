@@ -81,7 +81,9 @@ export default function Contact() {
                                 {[Instagram, Twitter, Facebook].map((Icon, index) => (
                                     <a
                                         key={index}
-                                        href="#"
+                                        href={index === 0 ? "https://www.instagram.com/ind_god_vkt" : "#"}
+                                        target={index === 0 ? "_blank" : undefined}
+                                        rel={index === 0 ? "noopener noreferrer" : undefined}
                                         className="p-3 glass rounded-full text-white hover:text-accent-cyan hover:bg-white/10 transition-all duration-300"
                                     >
                                         <Icon size={20} />
