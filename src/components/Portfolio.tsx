@@ -129,7 +129,7 @@ export default function Portfolio() {
     };
 
     return (
-        <section id="portfolio" className="py-20 md:py-32 bg-zinc-950">
+        <section id="portfolio" className="py-20 md:py-32 relative">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-accent-cyan font-medium tracking-widest mb-2 uppercase">Portfolio</h2>
