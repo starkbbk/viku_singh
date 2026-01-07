@@ -39,7 +39,7 @@ export default function Contact() {
                         <h2 className="text-accent-cyan font-medium tracking-widest mb-2 uppercase">Get in Touch</h2>
                         <h3 className="text-4xl md:text-5xl font-bold text-white mb-8">Let's Create Something Beautiful</h3>
                         <p className="text-gray-300 text-lg mb-12 leading-relaxed">
-                            Whether you're planning a wedding, need a portfolio update, or want to collaborate on a creative project,
+                            Whether you need a portfolio update, want to collaborate on a creative project, or capture a special event,
                             I'd love to hear from you.
                         </p>
 
@@ -146,7 +146,6 @@ export default function Contact() {
                                         onChange={handleChange}
                                     >
                                         <option value="" className="bg-gray-900">Select Type</option>
-                                        <option value="wedding" className="bg-gray-900">Wedding</option>
                                         <option value="portrait" className="bg-gray-900">Portrait</option>
                                         <option value="fashion" className="bg-gray-900">Fashion</option>
                                         <option value="event" className="bg-gray-900">Event</option>
