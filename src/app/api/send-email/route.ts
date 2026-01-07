@@ -26,7 +26,7 @@ export async function POST(req: Request) {
         // Email content
         const mailOptions = {
             from: process.env.EMAIL_USER,
-            to: process.env.EMAIL_USER, // Sending to self
+            to: 'vikashtkd19@gmail.com', // Sending specifically to this email
             subject: `New Portfolio Inquiry from ${name}`,
             html: `
           <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
