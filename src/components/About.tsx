@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const stats = [
     { icon: Camera, label: "Shoots", value: "150+" },
-    { icon: Clock, label: "Experience", value: "10+ Years" },
+    { icon: Clock, label: "Experience", value: "3+ Years" },
     { icon: Award, label: "Awards", value: "12" },
 ];
 
