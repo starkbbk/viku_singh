@@ -2,133 +2,198 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import { Star, ChevronLeft, ChevronRight, Quote, Sparkles } from "lucide-react";
 import Image from "next/image";
 
 const testimonials = [
-    {
-        id: 1,
-        name: "Sarah & James",
-        role: "Wedding Clients",
-        image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",
-        content: "Viku didn't just take photos; he captured the very soul of our wedding. Looking at the album feels like reliving the day all over again. His presence was so calming and professional.",
-        rating: 5,
-    },
-    {
-        id: 2,
-        name: "Elena Rodriguez",
-        role: "Fashion Model",
-        image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
-        content: "I've worked with many photographers, but Viku's eye for lighting and composition is unmatched. He made me feel completely at ease and the results were absolutely stunning.",
-        rating: 5,
-    },
-    {
-        id: 3,
-        name: "TechStart Inc.",
-        role: "Corporate Client",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop",
-        content: "We hired Viku for our annual event and headshots. The quality of work was exceptional and the turnaround time was incredibly fast. Highly recommended for any business needs.",
-        rating: 5,
-    },
+  {
+    id: 1,
+    name: "Sarah & James",
+    role: "Wedding Clients · New Delhi",
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",
+    content:
+      "Viku didn't just document our celebration; he captured the very soul of the night. Looking at the gallery feels like stepping directly back into that golden euphoria. Unmatched artistry.",
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: "Elena Rodriguez",
+    role: "Haute Fashion Editorial Model",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
+    content:
+      "Working with Viku in the studio is effortless. His understanding of chiaroscuro lighting and raw silhouette creates frames that look like Italian Vogue covers. Pure mastery of optics.",
+    rating: 5,
+  },
+  {
+    id: 3,
+    name: "Arjun Verma",
+    role: "Music Festival Director",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop",
+    content:
+      "Covering live stages requires extraordinary reflex and lens speed. Viku captured pyro explosions, crowd energy, and performer intimacy flawlessly. Our definitive visual partner.",
+    rating: 5,
+  },
 ];
 
 export default function Testimonials() {
-    const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [touchStart, setTouchStart] = useState<number | null>(null);
 
-    const nextTestimonial = () => {
-        setCurrentIndex((prev) => (prev + 1) % testimonials.length);
-    };
+  const nextTestimonial = () => {
+    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+  };
 
-    const prevTestimonial = () => {
-        setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-    };
+  const prevTestimonial = () => {
+    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
 
-    // Auto-advance
-    useEffect(() => {
-        const timer = setInterval(nextTestimonial, 5000);
-        return () => clearInterval(timer);
-    }, []);
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStart(e.touches[0].clientX);
+  };
 
-    return (
-        <section id="testimonials" className="py-20 relative overflow-hidden">
-            <div className="container mx-auto px-6">
-                <div className="text-center mb-16">
-                    <h2 className="text-accent-cyan font-medium tracking-widest mb-2 uppercase">Testimonials</h2>
-                    <h3 className="text-3xl md:text-4xl font-bold text-white">Kind Words</h3>
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStart === null) return;
+    const diff = touchStart - e.changedTouches[0].clientX;
+    if (diff > 40) {
+      nextTestimonial();
+    } else if (diff < -40) {
+      prevTestimonial();
+    }
+    setTouchStart(null);
+  };
+
+  useEffect(() => {
+    const timer = setInterval(nextTestimonial, 6000);
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <section
+      id="testimonials"
+      className="min-h-screen flex flex-col justify-center items-center py-16 relative overflow-hidden bg-[#08070b] snap-section"
+    >
+      <motion.div
+        initial={{ opacity: 0, scale: 0.92, y: 30 }}
+        whileInView={{ opacity: 1, scale: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+        className="container mx-auto px-4 sm:px-6 w-full my-auto"
+      >
+        <div className="text-center mb-10 sm:mb-16">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-amber-400/30 bg-amber-950/40 text-amber-300 text-[11px] sm:text-xs tracking-widest uppercase mb-3 sm:mb-4">
+            <Sparkles size={13} className="text-amber-400" />
+            <span>COLLECTOR & CLIENT REVIEWS</span>
+          </div>
+          <h2 className="text-xs uppercase font-mono tracking-[0.3em] text-amber-400 mb-2 font-semibold">
+            TESTIMONIALS
+          </h2>
+          <h3 className="text-3xl sm:text-5xl font-serif text-white uppercase tracking-tight font-normal">
+            Reflections & Words
+          </h3>
+        </div>
+
+        <div
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+          className="max-w-4xl mx-auto relative touch-pan-y"
+        >
+          <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 text-white/5 pointer-events-none">
+            <Quote size={140} />
+          </div>
+
+          <div className="relative z-10 min-h-[300px] sm:min-h-[360px] flex items-center">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentIndex}
+                initial={{ opacity: 0, x: 40 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -40 }}
+                transition={{ duration: 0.4 }}
+                className="w-full"
+              >
+                <div className="glass-panel p-6 sm:p-12 md:p-14 rounded-3xl text-center border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
+                  <div className="flex justify-center mb-4 sm:mb-6 gap-1">
+                    {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 text-amber-400 fill-amber-400" />
+                    ))}
+                  </div>
+
+                  <p className="text-base sm:text-xl md:text-2xl font-serif text-stone-200 italic mb-6 sm:mb-8 leading-relaxed font-light">
+                    &ldquo;{testimonials[currentIndex].content}&rdquo;
+                  </p>
+
+                  <div className="flex items-center justify-center gap-3 sm:gap-4">
+                    <div className="relative w-11 h-11 sm:w-12 sm:h-12 rounded-full overflow-hidden border-2 border-amber-400/50 shrink-0">
+                      <Image
+                        src={testimonials[currentIndex].image}
+                        alt={testimonials[currentIndex].name}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="text-left">
+                      <h4 className="font-serif font-bold text-white tracking-wide text-sm sm:text-base">
+                        {testimonials[currentIndex].name}
+                      </h4>
+                      <p className="text-[11px] sm:text-xs font-mono text-amber-300">
+                        {testimonials[currentIndex].role}
+                      </p>
+                    </div>
+                  </div>
                 </div>
+              </motion.div>
+            </AnimatePresence>
 
-                <div className="max-w-4xl mx-auto relative">
-                    <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 text-white/5">
-                        <Quote size={120} />
-                    </div>
+            {/* Desktop Navigation Buttons */}
+            <button
+              onClick={prevTestimonial}
+              aria-label="Previous Testimonial"
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 p-3 glass rounded-full hover:bg-amber-400/20 text-white hover:text-amber-300 transition-colors z-20 hidden md:block cursor-pointer"
+            >
+              <ChevronLeft size={22} />
+            </button>
+            <button
+              onClick={nextTestimonial}
+              aria-label="Next Testimonial"
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 p-3 glass rounded-full hover:bg-amber-400/20 text-white hover:text-amber-300 transition-colors z-20 hidden md:block cursor-pointer"
+            >
+              <ChevronRight size={22} />
+            </button>
+          </div>
 
-                    <div className="relative z-10 min-h-[400px] flex items-center">
-                        <AnimatePresence mode="wait">
-                            <motion.div
-                                key={currentIndex}
-                                initial={{ opacity: 0, x: 50 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                exit={{ opacity: 0, x: -50 }}
-                                transition={{ duration: 0.5 }}
-                                className="w-full"
-                            >
-                                <div className="glass-panel p-8 md:p-12 rounded-3xl text-center">
-                                    <div className="flex justify-center mb-6">
-                                        {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
-                                            <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
-                                        ))}
-                                    </div>
+          {/* Indicator Dots & Mobile Nav Arrows */}
+          <div className="flex items-center justify-center gap-4 mt-6 sm:mt-8">
+            <button
+              onClick={prevTestimonial}
+              aria-label="Previous Testimonial"
+              className="md:hidden p-2 rounded-full glass text-white/70 hover:text-white"
+            >
+              <ChevronLeft size={16} />
+            </button>
 
-                                    <p className="text-lg sm:text-xl md:text-2xl text-gray-200 italic mb-8 leading-relaxed">
-                                        "{testimonials[currentIndex].content}"
-                                    </p>
-
-                                    <div className="flex items-center justify-center gap-4">
-                                        <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-accent-cyan">
-                                            <Image
-                                                src={testimonials[currentIndex].image}
-                                                alt={testimonials[currentIndex].name}
-                                                fill
-                                                className="object-cover"
-                                            />
-                                        </div>
-                                        <div className="text-left">
-                                            <h4 className="font-bold text-white">{testimonials[currentIndex].name}</h4>
-                                            <p className="text-sm text-accent-cyan">{testimonials[currentIndex].role}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </motion.div>
-                        </AnimatePresence>
-
-                        {/* Navigation Buttons */}
-                        <button
-                            onClick={prevTestimonial}
-                            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 p-3 glass rounded-full hover:bg-white/10 transition-colors z-20 hidden md:block"
-                        >
-                            <ChevronLeft className="text-white" />
-                        </button>
-                        <button
-                            onClick={nextTestimonial}
-                            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 p-3 glass rounded-full hover:bg-white/10 transition-colors z-20 hidden md:block"
-                        >
-                            <ChevronRight className="text-white" />
-                        </button>
-                    </div>
-
-                    {/* Dots */}
-                    <div className="flex justify-center gap-2 mt-8">
-                        {testimonials.map((_, index) => (
-                            <button
-                                key={index}
-                                onClick={() => setCurrentIndex(index)}
-                                className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentIndex ? "w-8 bg-accent-cyan" : "bg-white/20 hover:bg-white/40"
-                                    }`}
-                            />
-                        ))}
-                    </div>
-                </div>
+            <div className="flex gap-2">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentIndex(index)}
+                  aria-label={`Go to slide ${index + 1}`}
+                  className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
+                    index === currentIndex ? "w-8 bg-amber-400 shadow-[0_0_10px_rgba(245,158,11,0.5)]" : "w-2 bg-white/20 hover:bg-white/40"
+                  }`}
+                />
+              ))}
             </div>
-        </section>
-    );
+
+            <button
+              onClick={nextTestimonial}
+              aria-label="Next Testimonial"
+              className="md:hidden p-2 rounded-full glass text-white/70 hover:text-white"
+            >
+              <ChevronRight size={16} />
+            </button>
+          </div>
+        </div>
+      </motion.div>
+    </section>
+  );
 }

@@ -1,69 +1,73 @@
 @import "tailwindcss";
 
 :root {
-  --background: #1e0b36;
-  /* Deep purple base */
-  --foreground: #ffffff;
-  --accent-cyan: #22d3ee;
-  /* Bright cyan */
-  --accent-purple: #d946ef;
-  /* Fuchsia */
+  --background: #08070b;
+  --foreground: #f5f4f0;
+  --accent-amber: #f59e0b;
+  --accent-gold: #fbbf24;
+  --accent-cream: #faf7f2;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-accent-cyan: var(--accent-cyan);
-  --color-accent-purple: var(--accent-purple);
+  --color-accent-amber: var(--accent-amber);
+  --color-accent-gold: var(--accent-gold);
+  --color-accent-cream: var(--accent-cream);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+  overflow-x: hidden;
+}
+
 body {
-  background-color: #1e0b36;
+  background-color: #08070b;
   background-image:
-    radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
-    radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
-    radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%),
-    radial-gradient(at 0% 50%, hsla(339, 49%, 30%, 1) 0, transparent 50%),
-    radial-gradient(at 100% 50%, hsla(339, 49%, 30%, 1) 0, transparent 50%),
-    radial-gradient(at 0% 100%, hsla(339, 49%, 30%, 1) 0, transparent 50%),
-    radial-gradient(at 50% 100%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
-    radial-gradient(at 100% 100%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+    radial-gradient(circle at 50% 0%, rgba(245, 158, 11, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 100% 50%, rgba(180, 83, 9, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 0% 100%, rgba(120, 53, 15, 0.05) 0%, transparent 50%);
   background-attachment: fixed;
   color: var(--foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Georgia, serif;
   overflow-x: hidden;
   min-height: 100vh;
 }
 
-/* Glassmorphism Utilities */
+/* Snap Center Utility for Middle-of-Screen Sections */
+.snap-section {
+  scroll-snap-align: center;
+  scroll-snap-stop: normal;
+}
+
+/* Luxury Darkroom Glassmorphism */
 .glass {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: rgba(20, 18, 25, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .glass-panel {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  background: rgba(14, 13, 18, 0.75);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.7);
 }
 
 .glass-hover {
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .glass-hover:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 25px rgba(217, 70, 239, 0.3);
-  /* Purple glow */
-  transform: translateY(-4px);
+  background: rgba(28, 25, 34, 0.85);
+  border-color: rgba(245, 158, 11, 0.3);
+  box-shadow: 0 10px 30px rgba(245, 158, 11, 0.15);
+  transform: translateY(-3px);
 }
 
 /* Scrollbar */
@@ -84,4 +88,66 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* 3D Transform Utilities */
+.perspective-800 {
+  perspective: 800px;
+}
+
+.perspective-1200 {
+  perspective: 1200px;
+}
+
+.perspective-2000 {
+  perspective: 2000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Darkroom Photography Viewfinder & Film Grain */
+.darkroom-grid {
+  background-size: 60px 60px;
+  background-image: 
+    linear-gradient(to right, rgba(245, 158, 11, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(245, 158, 11, 0.03) 1px, transparent 1px);
+}
+
+.viewfinder-crosshair {
+  position: relative;
+}
+.viewfinder-crosshair::before,
+.viewfinder-crosshair::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(245, 158, 11, 0.4);
+}
+
+/* 35mm Film Sprocket Border */
+.film-strip {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.15) 3px, transparent 4px);
+  background-size: 16px 16px;
+}
+
+/* Warm Amber Glow */
+.amber-glow {
+  box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.25);
+}
+
+.gold-border {
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+/* Custom Photography Viewfinder Cursor on Desktop */
+@media (pointer: fine) {
+  * {
+    cursor: none !important;
+  }
 }
