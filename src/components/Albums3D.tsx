@@ -392,7 +392,7 @@ export default function Albums3D() {
     <section
       id="albums"
       ref={sectionRef}
-      className="min-h-screen flex flex-col justify-center items-center py-12 sm:py-16 relative overflow-hidden bg-[#08070b] snap-section"
+      className="min-h-screen flex flex-col justify-center items-center py-12 sm:py-16 relative overflow-hidden bg-[#08070b]"
     >
       {/* Subtle Darkroom Ambient Background */}
       <div className="absolute inset-0 darkroom-grid opacity-25 pointer-events-none" />

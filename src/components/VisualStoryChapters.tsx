@@ -93,11 +93,14 @@ export default function VisualStoryChapters() {
   return (
     <section
       ref={containerRef}
-      className="relative h-[320vh] w-full bg-[#08070b] select-none snap-section"
+      className="relative h-[300vh] w-full bg-[#08070b] select-none"
       id="visual-stories"
     >
       {/* Sticky Fixed Viewport */}
-      <div className="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center">
+      <div 
+        className="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center z-10"
+        style={{ top: 0 }}
+      >
         {/* Background Film Chapters */}
         <div className="absolute inset-0 z-0">
           {/* Chapter 1 Background */}
@@ -171,7 +174,7 @@ export default function VisualStoryChapters() {
         </div>
 
         {/* Main Content Overlay: Transitions Synchronously with Scroll */}
-        <div className="relative z-20 container mx-auto px-5 sm:px-12 md:px-20 h-full flex flex-col justify-between py-10 sm:py-16 md:py-24">
+        <div className="relative z-20 container mx-auto px-5 sm:px-12 md:px-20 h-full flex flex-col justify-between pt-20 sm:pt-24 md:pt-28 pb-6 sm:pb-8 md:pb-12">
           {/* Top Exhibition Bar */}
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2.5">
@@ -188,16 +191,14 @@ export default function VisualStoryChapters() {
           </div>
 
           {/* Chapter Content Stack */}
-          <div className="relative w-full max-w-3xl my-auto">
+          <div className="relative w-full max-w-3xl my-auto grid grid-cols-1 grid-rows-1">
             {chapters.map((chap, idx) => {
               const currentOp = idx === 0 ? op1 : idx === 1 ? op2 : op3;
               return (
                 <motion.div
                   key={chap.id}
                   style={{ opacity: currentOp }}
-                  className={`${
-                    idx === 0 ? "relative" : "absolute top-0 left-0 right-0"
-                  } pointer-events-auto`}
+                  className="col-start-1 row-start-1 pointer-events-none"
                 >
                   {/* Category & Badge */}
                   <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-400/30 text-amber-300 text-[10px] sm:text-xs tracking-widest uppercase mb-2.5 sm:mb-4 backdrop-blur-md">

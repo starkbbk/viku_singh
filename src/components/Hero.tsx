@@ -47,7 +47,7 @@ export default function Hero() {
       ref={containerRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="relative min-h-screen w-full overflow-hidden flex items-center justify-center pt-24 pb-16 perspective-1200 select-none bg-[#08070b] snap-section"
+      className="relative min-h-screen w-full overflow-hidden flex items-center justify-center pt-24 pb-16 perspective-1200 select-none bg-[#08070b]"
     >
       {/* 3D Dynamic Floating Photo Wall in Background */}
       <div className="absolute inset-0 z-0 overflow-hidden">

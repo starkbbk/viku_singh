@@ -180,7 +180,7 @@ export default function Portfolio() {
     <section
       id="portfolio"
       ref={galleryRef}
-      className="min-h-screen flex flex-col justify-center py-20 relative overflow-hidden bg-[#08070b] snap-section"
+      className="min-h-screen flex flex-col justify-center py-20 relative overflow-hidden bg-[#08070b]"
     >
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}

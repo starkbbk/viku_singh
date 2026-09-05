@@ -70,7 +70,7 @@ export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="min-h-screen flex flex-col justify-center items-center py-16 relative overflow-hidden bg-[#08070b] snap-section"
+      className="min-h-screen flex flex-col justify-center items-center py-16 relative overflow-hidden bg-[#08070b]"
     >
       <motion.div
         initial={{ opacity: 0, scale: 0.92, y: 30 }}

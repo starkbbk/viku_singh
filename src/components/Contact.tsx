@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen flex flex-col justify-center items-center py-20 relative overflow-hidden bg-[#08070b] snap-section"
+      className="min-h-screen flex flex-col justify-center items-center py-20 relative overflow-hidden bg-[#08070b]"
     >
       {/* Background Ambient Glow */}
       <div className="absolute inset-0 darkroom-grid opacity-20 pointer-events-none" />

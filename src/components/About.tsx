@@ -67,7 +67,7 @@ export default function About() {
     <section
       id="about"
       ref={sectionRef}
-      className="min-h-screen flex flex-col justify-center py-20 relative overflow-hidden bg-[#08070b] snap-section"
+      className="min-h-screen flex flex-col justify-center py-20 relative overflow-hidden bg-[#08070b]"
     >
       {/* Darkroom Ambient Background */}
       <div className="absolute inset-0 darkroom-grid opacity-20 pointer-events-none" />
