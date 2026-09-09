@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "photos:sync": "node scripts/prepare-photos.mjs",
+    "predev": "npm run photos:sync",
+    "prebuild": "npm run photos:sync"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -16,6 +19,7 @@
     "nodemailer": "^7.0.12",
     "react": "19.2.0",
     "react-dom": "19.2.0",
+    "sharp": "0.34.5",
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {

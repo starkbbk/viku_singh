@@ -1,36 +1,29 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import CustomCursor from "@/components/CustomCursor";
-import "./globals.css";
+import type { Metadata, Viewport } from 'next';
+import localFont from 'next/font/local';
+import './globals.css';
+import './photographic-motion.css';
+import './responsive.css';
+import './photo-effects.css';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const display = localFont({
+  src: '../../public/fonts/Anton-Regular.ttf',
+  variable: '--font-display',
+  display: 'swap',
+  weight: '400',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export const metadata: Metadata = {
-  title: "Viku Singh · Cinematic Photography & Visual Direction",
-  description: "Official 3D Portfolio of Viku Singh - Lifestyle, Fashion Editorial, Concerts and Street Photography based in New Delhi.",
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
+  themeColor: '#101210',
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en" className="scroll-smooth">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <CustomCursor />
-        {children}
-      </body>
-    </html>
-  );
+export const metadata: Metadata = {
+  title: 'Viku Singh — Photography & Visual Stories',
+  description: 'The photographic world of Viku Singh. Live events, fashion, street stories and moments in motion. Independent photographer based in New Delhi, India.',
+};
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return <html lang="en" className={display.variable}><body>{children}</body></html>;
 }

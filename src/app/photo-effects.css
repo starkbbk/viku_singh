@@ -1,0 +1,102 @@
+/* Each layer owns one motion: reveal, scroll depth, then pointer perspective. */
+.gallery-batches { overflow: clip; overflow-clip-margin: 8px; }
+.animated-photo { position: relative; isolation: isolate; }
+.photo-entry { position: relative; transform-origin: center bottom; }
+.photo-depth-layer { perspective: 1000px; transform: translate3d(0, var(--photo-depth-y, 0px), 0); }
+.animated-photo .photo-open { overflow: visible; transform-style: preserve-3d; transform-origin: center; }
+.photo-canvas, .photo-image-layer { display: block; width: 100%; }
+.photo-canvas { overflow: hidden; background: #172017; }
+.photo-image-layer > img { width: 100%; height: auto; display: block; }
+.photo-glare, .photo-edge-light, .photo-focus-corners { position: absolute; inset: 0; pointer-events: none; }
+.photo-glare { z-index: 1; mix-blend-mode: screen; }
+.photo-edge-light { border: 1px solid #f0efc59c; opacity: 0; transition: opacity .4s; transform: translateZ(2px); }
+.animated-photo .photo-hover { z-index: 3; pointer-events: none; transform: translateZ(13px); }
+.animated-photo .photo-hover > span { font-size: 11px; letter-spacing: .11em; }
+.animated-photo .photo-hover > svg { transition: transform .5s cubic-bezier(.2,.8,.2,1); }
+.photo-focus-corners { inset: 12px; z-index: 2; transform: translateZ(18px); }
+.photo-focus-corners i { position: absolute; width: 9px; height: 9px; border-color: #f4f3cc; border-style: solid; opacity: 0; transition: width .45s, height .45s, opacity .35s; }
+.photo-focus-corners i:nth-child(1) { left: 0; top: 0; border-width: 1px 0 0 1px; }
+.photo-focus-corners i:nth-child(2) { right: 0; top: 0; border-width: 1px 1px 0 0; }
+.photo-focus-corners i:nth-child(3) { right: 0; bottom: 0; border-width: 0 1px 1px 0; }
+.photo-focus-corners i:nth-child(4) { left: 0; bottom: 0; border-width: 0 0 1px 1px; }
+.animated-photo .photo-open:is(:hover, :focus-visible) .photo-focus-corners i { opacity: .85; width: 22px; height: 22px; }
+.animated-photo .photo-open:is(:hover, :focus-visible) .photo-edge-light { opacity: .65; }
+.animated-photo .photo-open:is(:hover, :focus-visible) .photo-hover > svg { transform: scale(1.1) rotate(90deg); }
+.animated-photo figcaption { position: relative; z-index: 1; padding-top: 19px; transition: color .35s; }
+.animated-photo:focus-within figcaption, .animated-photo:hover figcaption { color: var(--accent); }
+.photo-caption-line { display: block; height: 1px; width: 100%; background: var(--accent); opacity: .5; margin-top: 10px; transform: scaleX(0); transform-origin: left; transition: transform .65s cubic-bezier(.2,.8,.2,1); }
+.animated-photo:hover .photo-caption-line, .animated-photo:focus-within .photo-caption-line { transform: scaleX(1); }
+.animated-photo[data-photo-revealed='true'] figcaption > span { animation: caption-develop .6s .12s backwards; }
+.animated-photo[data-photo-revealed='true'] figcaption > span:last-child { animation-delay: .22s; }
+@keyframes caption-develop { from { opacity: .3; transform: translateY(5px); } to { opacity: 1; transform: none; } }
+
+/* A printed-frame treatment for the biography photograph. */
+.about-image .photo-depth-layer { transform: translate3d(0, var(--photo-depth-y, 0px), 0) scale(1.025); }
+.about-image:after { content: ''; position: absolute; inset: 65% 0 0; background: linear-gradient(transparent, #0c140be0); pointer-events: none; z-index: 1; }
+.portrait-focus-outline { position: absolute; inset: 16px; border: 1px solid #f0efd375; pointer-events: none; z-index: 2; clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%); transition: clip-path 1.1s cubic-bezier(.2,.8,.2,1); }
+.about-image[data-photo-revealed='true'] .portrait-focus-outline { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
+.portrait-label { z-index: 3; transform: translateY(calc(var(--photo-depth-y, 0px) * -.5)); }
+.scroll-film-frame { perspective: 900px; }
+.scroll-film-frame img { transition: transform .7s cubic-bezier(.2,.8,.2,1), filter .7s; }
+.scroll-film-frame > span { transition: color .4s; }
+@media (hover: hover) and (pointer: fine) {
+  .scroll-film-frame:hover img { transform: translateY(-8px) rotateY(5deg) scale(1.025); filter: saturate(1.13); }
+  .scroll-film-frame:hover > span { color: var(--accent); }
+}
+
+/* Gallery navigation develops a new full photograph in its travel direction. */
+.lightbox-main { overflow: hidden; }
+.lightbox-frame { width: 100%; height: 100%; min-width: 0; min-height: 0; display: flex; align-items: center; justify-content: center; }
+.lightbox-frame .lightbox-image { animation: none; max-width: 100%; max-height: 100%; object-fit: contain; }
+.lightbox-nav { z-index: 2; }
+.lightbox-nav:focus-visible { outline-offset: -4px; }
+
+/* Graphic layers echo the circular lens without adding image downloads. */
+.about-section, .contact-section { position: relative; isolation: isolate; }
+.section-lens { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: -1; }
+.section-lens-ring { position: absolute; width: clamp(350px, 60vw, 1000px); aspect-ratio: 1; right: -27%; top: 4%; border: 1px solid #e9edaa12; border-radius: 50%; }
+.section-lens-ring:before, .section-lens-ring:after { content: ''; position: absolute; border: 1px solid #e9edaa12; border-radius: 50%; }
+.section-lens-ring:before { inset: 10%; }
+.section-lens-ring:after { inset: 24%; }
+.section-lens-cross { position: absolute; inset: 0; }
+.section-lens-cross:before, .section-lens-cross:after { content: ''; position: absolute; background: #e9edaa15; }
+.section-lens-cross:before { height: 1px; left: 5%; right: 5%; top: 50%; }
+.section-lens-cross:after { width: 1px; top: 5%; bottom: 5%; left: 50%; }
+.contact-section .section-lens-ring, .contact-section .section-lens-ring:before, .contact-section .section-lens-ring:after { border-color: #33402319; }
+.contact-section .section-lens-cross:before, .contact-section .section-lens-cross:after { background: #33402317; }
+.booking-button, .view-more-button, .archive-rail { position: relative; isolation: isolate; overflow: hidden; }
+.archive-rail { position: absolute; }
+.booking-button:before, .view-more-button:before, .archive-rail:before { content: ''; position: absolute; inset: 0; z-index: -1; background: #ffffff45; transform: translateX(-110%) skewX(-20deg); transition: transform .7s cubic-bezier(.2,.8,.2,1); pointer-events: none; }
+.booking-button:is(:hover, :focus-visible):before, .view-more-button:is(:hover, :focus-visible):before, .archive-rail:is(:hover, :focus-visible):before { transform: translateX(110%) skewX(-20deg); }
+.text-link > svg:last-child, .site-footer a > svg, .archive-rail > svg { transition: transform .4s cubic-bezier(.2,.8,.2,1); }
+.text-link:hover > svg:last-child, .site-footer a:hover > svg { transform: translate(3px, -3px); }
+.archive-rail:hover > svg { transform: translateY(3px); }
+
+@media (max-width: 1024px) {
+  .animated-photo figcaption { padding-top: 16px; }
+  .photo-caption-line { margin-top: 8px; }
+  .photo-focus-corners { inset: 9px; }
+  .photo-focus-corners i { opacity: .35; width: 8px; height: 8px; }
+}
+@media (max-width: 600px) {
+  .animated-photo .photo-hover > span { font-size: 10px; }
+  .photo-focus-corners { inset: 7px; transform: none; }
+  .photo-caption-line { margin-top: 7px; }
+  .animated-photo figcaption { font-size: 10px; }
+}
+@media (hover: none), (pointer: coarse) {
+  .photo-glare { display: none; }
+  .animated-photo .photo-open { transform-style: flat; }
+  .animated-photo .photo-hover { transform: none; }
+  .animated-photo .photo-open:hover .photo-focus-corners i { width: 9px; height: 9px; opacity: .4; }
+  .animated-photo .photo-open:hover .photo-hover > svg { transform: none; }
+  .photo-caption-line { transition-duration: .2s; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .photo-entry, .photo-depth-layer, .photo-image-layer, .lightbox-frame { transform: none !important; filter: none !important; clip-path: none !important; opacity: 1 !important; }
+  .photo-glare { display: none; }
+  .portrait-label, .scroll-film-frame img { transform: none !important; }
+  .portrait-focus-outline { clip-path: none; }
+  .section-lens-ring { transform: none !important; }
+  .booking-button:before, .view-more-button:before, .archive-rail:before { display: none; }
+}
