@@ -26,8 +26,8 @@ for (let index=0;index<4;index++) assert(photos.some(photo=>photo.featured===ind
 console.log(`Verified ${photos.length} photographs, ${photos.length*3} image paths all four chapter images and all ${imports.length} archive imports.`);
 
 const latest = JSON.parse(await readFile('src/data/latest-import.json', 'utf8'));
-assert.equal(latest.length, 14, 'All supplied photos must be tracked');
-assert.equal(new Set(latest.map(item => item.filename)).size, 14);
+assert.equal(photos.filter(photo => photo.recent).length, latest.length, 'All recent photos must be tracked');
+assert.equal(new Set(latest.map(item => item.filename)).size, latest.length);
 for (const item of latest) {
   const photo = photos.find(photo => photo.original === '/portfolio/' + item.photo_path);
   assert(photo, `Missing latest photograph: ${item.filename}`);
@@ -39,4 +39,4 @@ for (const item of latest) {
   assert(thumbnail.width <= 800 && thumbnail.height <= 800);
   assert(full.width <= 1920 && full.height <= 1920);
 }
-console.log('Verified all 14 latest photos: 7 Motorsport, 7 Events, with captions and optimized images.');
+console.log(`Verified all ${latest.length} latest photos with captions and optimized images.`);
