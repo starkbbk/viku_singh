@@ -8,7 +8,7 @@ import { createIntroSequence, INTRO_TIMING } from '@/lib/intro-sequence';
 import { MOBILE_PHOTO_MEDIA } from '@/lib/responsive-photo';
 import styles from './CinematicLoader.module.css';
 
-interface IntroPhoto { id: string; src: string; thumbnail: string; category: string; featured: number }
+interface IntroPhoto { id: string; src: string; thumbnail: string; category: string; featured: number; recent?: boolean }
 interface CinematicLoaderProps { photos: IntroPhoto[]; onComplete: () => void }
 
 export default function CinematicLoader({ photos, onComplete }: CinematicLoaderProps) {
@@ -19,8 +19,9 @@ export default function CinematicLoader({ photos, onComplete }: CinematicLoaderP
   const [revealing, setRevealing] = useState(false);
   const [readyFrames, setReadyFrames] = useState<string[]>([]);
   const frames = useMemo(() => [
-    ...photos.filter(photo => photo.featured >= 0),
-    ...photos.filter(photo => photo.featured < 0),
+    ...photos.filter(photo => photo.recent),
+    ...photos.filter(photo => !photo.recent && photo.featured >= 0),
+    ...photos.filter(photo => !photo.recent && photo.featured < 0),
   ].slice(0, 8), [photos]);
   const openingPhotos = useMemo(() => photos.filter(photo => photo.featured >= 0 && photo.featured < 4), [photos]);
 

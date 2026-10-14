@@ -29,10 +29,10 @@ const hashes = new Set();
 const photos = [];
 const counts = {};
 const featured = [
-  'e6c4d66f-29ff-49e7-809b-4e969c02cfe5',
+  'IMG_6981',
   '04bf13aa-b728-45f2-80e2-35e384a6366c',
   'a6d35c02-a9af-4001-b233-2fcbfcc4405a',
-  '03124d5c-609f-44ca-ab19-cef83cdc2a2a',
+  'IMG_7089',
   '42a34cc4-99db-4bec-89c3-5bd56c0c29cb',
   '026c30df-6c91-4920-b34f-5ebf47e39607',
 ];
@@ -77,7 +77,8 @@ for (const file of files) {
     recent: overrides[relative]?.recent === true,
   });
 }
-photos.sort((a,b) => (a.featured < 0 ? 999 : a.featured) - (b.featured < 0 ? 999 : b.featured) || Number(b.recent) - Number(a.recent) || Number(b.original.includes('/Archive/')) - Number(a.original.includes('/Archive/')));
+// New uploads lead every gallery view, including category filters.
+photos.sort((a,b) => Number(b.recent) - Number(a.recent) || (a.featured < 0 ? 999 : a.featured) - (b.featured < 0 ? 999 : b.featured) || Number(b.original.includes('/Archive/')) - Number(a.original.includes('/Archive/')));
 await mkdir(path.join(root, 'src/data'), { recursive:true });
 await writeFile(path.join(root, 'src/data/photos.json'), JSON.stringify(photos, null, 2) + '\n');
 console.log(`Prepared ${photos.length} photographs: ${JSON.stringify(counts)}`);

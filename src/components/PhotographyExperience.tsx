@@ -74,7 +74,7 @@ export default function PhotographyExperience({ photos }: { photos: Photo[] }) {
   useMotionValueEvent(scrollYProgress, 'change', value => setChapter(chapterAtProgress(value)));
   const selected = chapterContent[chapter];
   const featuredPhotos = chapterContent.map(item => photos.find(photo => photo.featured === item.featured)!).filter(Boolean);
-  const categories = ['All', ...new Set(photos.map(photo => photo.category))];
+  const categories = ['All', ...new Set(['Events', 'Fashion', 'Street', 'Motorsport', 'Personal', ...photos.map(photo => photo.category)].filter(category => photos.some(photo => photo.category === category)))];
   const selectedFilter = categories.includes(filter) ? filter : 'All';
   const filtered = selectedFilter === 'All' ? photos : photos.filter(photo => photo.category === selectedFilter);
   const photoCount = filtered.length;
@@ -102,7 +102,8 @@ export default function PhotographyExperience({ photos }: { photos: Photo[] }) {
       window.scrollTo({ top: scrollTop, behavior: 'instant' });
     });
   };
-  const stripPhotos = [...photos.filter(photo => photo.featured >= 0).slice(0, 4), ...photos.filter(photo => photo.original.includes('/Archive/')).filter((_, index) => index % 8 === 0).slice(0, 4)];
+  const recentStripPhotos = photos.filter(photo => photo.recent).slice(0, 8);
+  const stripPhotos = [...recentStripPhotos, ...photos.filter(photo => !photo.recent)].slice(0, 8);
   const portrait = photos.find(photo => photo.original.includes('a00fc7ab')) || photos.find(photo => photo.category === 'Personal');
 
   const goToChapter = (index: number) => {
