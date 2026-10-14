@@ -1,5 +1,173 @@
 [
   {
+    "id": "3cd0bcddd87b",
+    "category": "Events",
+    "src": "/gallery/3cd0bcddd87b-8add3610a0-1920.webp",
+    "thumbnail": "/gallery/3cd0bcddd87b-8add3610a0-800.webp",
+    "original": "/portfolio/Event/Latest/IMG_6699.jpg",
+    "width": 5259,
+    "height": 3948,
+    "title": "South Side, in green",
+    "alt": "Wide view of the South Side Story concert stage with green lights and a packed crowd",
+    "featured": -1,
+    "recent": true,
+    "uploadBatch": 2
+  },
+  {
+    "id": "535e892454e6",
+    "category": "Events",
+    "src": "/gallery/535e892454e6-c0a977edcb-1920.webp",
+    "thumbnail": "/gallery/535e892454e6-c0a977edcb-800.webp",
+    "original": "/portfolio/Event/Latest/IMG_6700.jpg",
+    "width": 4000,
+    "height": 5328,
+    "title": "Raise the room",
+    "alt": "Two performers facing a packed concert crowd under golden stage lights",
+    "featured": -1,
+    "recent": true,
+    "uploadBatch": 2
+  },
+  {
+    "id": "5cb7cec80ef3",
+    "category": "Events",
+    "src": "/gallery/5cb7cec80ef3-9f02c5e4c2-1920.webp",
+    "thumbnail": "/gallery/5cb7cec80ef3-9f02c5e4c2-800.webp",
+    "original": "/portfolio/Event/Latest/IMG_6701.jpg",
+    "width": 5328,
+    "height": 4000,
+    "title": "A thousand hands",
+    "alt": "Wide view of the South Side Story concert with a band under white and gold lights above raised hands",
+    "featured": -1,
+    "recent": true,
+    "uploadBatch": 2
+  },
+  {
+    "id": "66c5badd18c2",
+    "category": "Events",
+    "src": "/gallery/66c5badd18c2-6b051aea0f-1920.webp",
+    "thumbnail": "/gallery/66c5badd18c2-6b051aea0f-800.webp",
+    "original": "/portfolio/Event/Latest/IMG_6703.jpg",
+    "width": 2160,
+    "height": 3840,
+    "title": "A frame within the crowd",
+    "alt": "Concert crowd and stage presented with a rounded inset frame under golden lights",
+    "featured": -1,
+    "recent": true,
+    "uploadBatch": 2
+  },
+  {
+    "id": "a483fb195158",
+    "category": "Events",
+    "src": "/gallery/a483fb195158-dde4bb5812-1920.webp",
+    "thumbnail": "/gallery/a483fb195158-dde4bb5812-800.webp",
+    "original": "/portfolio/Event/Latest/IMG_6705.jpg",
+    "width": 4616,
+    "height": 4616,
+    "title": "Layers of live music",
+    "alt": "Concert collage of a bassist, a band and crowds under colourful stage lights",
+    "featured": -1,
+    "recent": true,
+    "uploadBatch": 2
+  },
+  {
+    "id": "ae7dad734b16",
+    "category": "Events",
+    "src": "/gallery/ae7dad734b16-e74dfaaf9c-1920.webp",
+    "thumbnail": "/gallery/ae7dad734b16-e74dfaaf9c-800.webp",
+    "original": "/portfolio/Event/Latest/IMG_6706.jpg",
+    "width": 2624,
+    "height": 3488,
+    "title": "Your turn to sing",
+    "alt": "Long-haired singer extending a microphone toward the audience in a selective-colour portrait",
+    "featured": -1,
+    "recent": true,
+    "uploadBatch": 2
+  },
+  {
+    "id": "1fd25d01b3e4",
+    "category": "Events",
+    "src": "/gallery/1fd25d01b3e4-1ca03a39b7-1920.webp",
+    "thumbnail": "/gallery/1fd25d01b3e4-1ca03a39b7-800.webp",
+    "original": "/portfolio/Event/Latest/IMG_6868.jpg",
+    "width": 4000,
+    "height": 6000,
+    "title": "Inside the rainbow",
+    "alt": "Smiling singer in a silver outfit surrounded by rainbow lens flares on stage",
+    "featured": -1,
+    "recent": true,
+    "uploadBatch": 2
+  },
+  {
+    "id": "306862fbf541",
+    "category": "Events",
+    "src": "/gallery/306862fbf541-2d5c50821b-1920.webp",
+    "thumbnail": "/gallery/306862fbf541-2d5c50821b-800.webp",
+    "original": "/portfolio/Event/Latest/IMG_6884.jpg",
+    "width": 4000,
+    "height": 6000,
+    "title": "Prismatic voice",
+    "alt": "Singer performing with a pink microphone surrounded by circular rainbow lens flares",
+    "featured": -1,
+    "recent": true,
+    "uploadBatch": 2
+  },
+  {
+    "id": "78966278ffca",
+    "category": "Events",
+    "src": "/gallery/78966278ffca-ec6ae74c65-1920.webp",
+    "thumbnail": "/gallery/78966278ffca-ec6ae74c65-800.webp",
+    "original": "/portfolio/Event/Latest/IMG_6894.jpg",
+    "width": 3954,
+    "height": 5135,
+    "title": "A pause in blue",
+    "alt": "Singer seated on a stage platform holding a pink microphone against a blue backdrop",
+    "featured": -1,
+    "recent": true,
+    "uploadBatch": 2
+  },
+  {
+    "id": "186397c6215e",
+    "category": "Fashion",
+    "src": "/gallery/186397c6215e-149ac8d2df-1920.webp",
+    "thumbnail": "/gallery/186397c6215e-149ac8d2df-800.webp",
+    "original": "/portfolio/Fashion/Latest/IMG_6875.jpg",
+    "width": 4672,
+    "height": 7008,
+    "title": "After-dark attitude",
+    "alt": "Full-length posed portrait in a silver outfit and embellished boots outside at night",
+    "featured": -1,
+    "recent": true,
+    "uploadBatch": 2
+  },
+  {
+    "id": "9b8ee58cbc8c",
+    "category": "Fashion",
+    "src": "/gallery/9b8ee58cbc8c-18f9a2be30-1920.webp",
+    "thumbnail": "/gallery/9b8ee58cbc8c-18f9a2be30-800.webp",
+    "original": "/portfolio/Fashion/Latest/IMG_6877.jpg",
+    "width": 4000,
+    "height": 6000,
+    "title": "Silver reflections",
+    "alt": "Posed portrait in a silver embellished outfit inside a dark metallic lift",
+    "featured": -1,
+    "recent": true,
+    "uploadBatch": 2
+  },
+  {
+    "id": "bec60a8e299e",
+    "category": "Fashion",
+    "src": "/gallery/bec60a8e299e-479e048d90-1920.webp",
+    "thumbnail": "/gallery/bec60a8e299e-479e048d90-800.webp",
+    "original": "/portfolio/Fashion/Latest/IMG_6882.jpg",
+    "width": 4000,
+    "height": 6000,
+    "title": "Reflections in motion",
+    "alt": "Seated portrait in a silver embellished outfit with one arm raised inside a lift",
+    "featured": -1,
+    "recent": true,
+    "uploadBatch": 2
+  },
+  {
     "id": "57f7ae77c975",
     "category": "Events",
     "src": "/gallery/57f7ae77c975-dc36e7235f-1920.webp",
@@ -10,7 +178,8 @@
     "title": "One voice, a thousand echoes",
     "alt": "Black and white photograph of a singer facing a crowd with a raised microphone",
     "featured": 0,
-    "recent": true
+    "recent": true,
+    "uploadBatch": 0
   },
   {
     "id": "28451781e531",
@@ -23,7 +192,8 @@
     "title": "Golden apex",
     "alt": "White sports coupe with yellow headlights captured in a panning photograph",
     "featured": 3,
-    "recent": true
+    "recent": true,
+    "uploadBatch": 0
   },
   {
     "id": "9c9ea1301c00",
@@ -36,7 +206,8 @@
     "title": "Colour in the air",
     "alt": "Singer reaching toward the audience through circular rainbow lens flares",
     "featured": -1,
-    "recent": true
+    "recent": true,
+    "uploadBatch": 0
   },
   {
     "id": "203cb0515908",
@@ -49,7 +220,8 @@
     "title": "A smile between songs",
     "alt": "Smiling singer in a silver stage outfit holding a pink microphone against colourful stage graphics",
     "featured": -1,
-    "recent": true
+    "recent": true,
+    "uploadBatch": 0
   },
   {
     "id": "c0dfa223c6e9",
@@ -62,7 +234,8 @@
     "title": "A little electric",
     "alt": "Singer with a pink microphone in a silver stage outfit against purple lights",
     "featured": -1,
-    "recent": true
+    "recent": true,
+    "uploadBatch": 0
   },
   {
     "id": "915f552db2c0",
@@ -75,7 +248,8 @@
     "title": "Every note matters",
     "alt": "Close-up of a singer in a black and red stage jacket holding a microphone",
     "featured": -1,
-    "recent": true
+    "recent": true,
+    "uploadBatch": 0
   },
   {
     "id": "20546f761861",
@@ -88,7 +262,8 @@
     "title": "Between the verses",
     "alt": "Singer gesturing with one hand while holding a microphone under red stage lights",
     "featured": -1,
-    "recent": true
+    "recent": true,
+    "uploadBatch": 0
   },
   {
     "id": "d4c873469371",
@@ -101,7 +276,8 @@
     "title": "After the encore",
     "alt": "Red and gold decorative stage hat isolated against a dark background",
     "featured": -1,
-    "recent": true
+    "recent": true,
+    "uploadBatch": 0
   },
   {
     "id": "a8bf038c03d8",
@@ -114,7 +290,8 @@
     "title": "Under golden lights",
     "alt": "Singer holding a gold microphone under warm yellow stage lights",
     "featured": -1,
-    "recent": true
+    "recent": true,
+    "uploadBatch": 0
   },
   {
     "id": "aaf575125f60",
@@ -127,7 +304,8 @@
     "title": "Smoke & mirrors",
     "alt": "Rear view of a blue and white BMW drifting between track cones",
     "featured": -1,
-    "recent": true
+    "recent": true,
+    "uploadBatch": 0
   },
   {
     "id": "c2fe71560cbb",
@@ -140,7 +318,8 @@
     "title": "Sideways, in red",
     "alt": "Red and black drift car sliding across the track with tyre smoke",
     "featured": -1,
-    "recent": true
+    "recent": true,
+    "uploadBatch": 0
   },
   {
     "id": "14f28ca1711a",
@@ -153,7 +332,8 @@
     "title": "The last light",
     "alt": "Red and black drift car accelerating away beneath a warm stormy sky",
     "featured": -1,
-    "recent": true
+    "recent": true,
+    "uploadBatch": 0
   },
   {
     "id": "647f89c62e39",
@@ -166,7 +346,8 @@
     "title": "On the edge",
     "alt": "Rear three-quarter view of a red and black drift car in motion",
     "featured": -1,
-    "recent": true
+    "recent": true,
+    "uploadBatch": 0
   },
   {
     "id": "fd966b535fa5",
@@ -179,7 +360,8 @@
     "title": "Full throttle",
     "alt": "Close view of a turquoise drift car with a spinning rear wheel and tyre smoke",
     "featured": -1,
-    "recent": true
+    "recent": true,
+    "uploadBatch": 0
   },
   {
     "id": "77e2474293f7",
@@ -192,7 +374,8 @@
     "title": "Chasing the blur",
     "alt": "Rear view of a white sports coupe in motion against a blurred track background",
     "featured": -1,
-    "recent": true
+    "recent": true,
+    "uploadBatch": 0
   },
   {
     "id": "79afff91f9f3",
@@ -205,7 +388,8 @@
     "title": "Fashion / 01",
     "alt": "Studio fashion portrait in red against a black backdrop",
     "featured": 1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "81474b6a4893",
@@ -218,7 +402,8 @@
     "title": "Street / 08",
     "alt": "A busy flower market beneath warm strings of lights",
     "featured": 2,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "6a2f926ead15",
@@ -231,7 +416,8 @@
     "title": "Fashion / 02",
     "alt": "A seated fashion portrait against a white studio backdrop",
     "featured": 4,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "fa4621fed56f",
@@ -244,7 +430,8 @@
     "title": "Street / 01",
     "alt": "A child looking up with a white flower resting on their forehead",
     "featured": 5,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "52a05dfde9bc",
@@ -257,7 +444,8 @@
     "title": "Events / 17",
     "alt": "Singer in black performing on a dark stage above the audience",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "82ce6161c11d",
@@ -270,7 +458,8 @@
     "title": "Events / 18",
     "alt": "Singer holding a microphone between two columns of stage fire",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "8cc28768c8fe",
@@ -283,7 +472,8 @@
     "title": "Events / 19",
     "alt": "Wide view of a concert stage under red lights",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "3c151964bee6",
@@ -296,7 +486,8 @@
     "title": "Events / 20",
     "alt": "Performer in a checked shirt leaning toward the audience through stage smoke",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "7954247b1bf8",
@@ -309,7 +500,8 @@
     "title": "Events / 21",
     "alt": "Singer in a cream shirt surrounded by red stage smoke",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "e5a58b845971",
@@ -322,7 +514,8 @@
     "title": "Events / 22",
     "alt": "Singer performing in front of a red screen above raised phones",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "4fe717aaf031",
@@ -335,7 +528,8 @@
     "title": "Events / 23",
     "alt": "Singer raising one hand above a crowd recording the concert",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "b9e8ddb72d36",
@@ -348,7 +542,8 @@
     "title": "Events / 24",
     "alt": "Crowded concert stage glowing with red lights and screen graphics",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "38213ac456ed",
@@ -361,7 +556,8 @@
     "title": "Events / 25",
     "alt": "Wide concert view with a singer raising an arm beneath warm lights",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "3f3284cdd666",
@@ -374,7 +570,8 @@
     "title": "Events / 26",
     "alt": "Performer walking across the stage in front of a blue screen",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "8f79a4f0fa9b",
@@ -387,7 +584,8 @@
     "title": "Events / 27",
     "alt": "Performer holding a microphone against a red screen with a ring graphic",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "8b5b1df4057c",
@@ -400,7 +598,8 @@
     "title": "Events / 28",
     "alt": "Close-up of a singer wearing a cap and holding a microphone",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "1aaa5f5eb597",
@@ -413,7 +612,8 @@
     "title": "Events / 29",
     "alt": "Singer adjusting an in-ear monitor under a blue spotlight",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "ba06b88e8b03",
@@ -426,7 +626,8 @@
     "title": "Events / 30",
     "alt": "Full-length view of a singer in a cap at the front of the stage",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "2c8dd5f63c76",
@@ -439,7 +640,8 @@
     "title": "Events / 31",
     "alt": "Singer leaning backward with a microphone against a bright red screen",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "d1abaa22ca2c",
@@ -452,7 +654,8 @@
     "title": "Events / 32",
     "alt": "Singer in a textured dark jacket performing at a microphone stand",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "4eaef80b2e30",
@@ -465,7 +668,8 @@
     "title": "Events / 33",
     "alt": "Singer smiling beside a microphone under red stage lights",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "3ee8cc958b3e",
@@ -478,7 +682,8 @@
     "title": "Events / 34",
     "alt": "Singer raising both hands while performing at a microphone stand",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "d0c125a2ef6b",
@@ -491,7 +696,8 @@
     "title": "Events / 35",
     "alt": "Side view of a singer at a microphone on a dark stage",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "7135d82d5b34",
@@ -504,7 +710,8 @@
     "title": "Events / 36",
     "alt": "Singer performing in front of a fiery orange stage graphic",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "04859e5375e5",
@@ -517,7 +724,8 @@
     "title": "Events / 37",
     "alt": "Large nighttime concert stage with flame effects and a packed audience",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "aabc0fa87eea",
@@ -530,7 +738,8 @@
     "title": "Events / 38",
     "alt": "Two performers greeting a large crowd under golden stage lights",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "9f3d1b44fd06",
@@ -543,7 +752,8 @@
     "title": "Events / 39",
     "alt": "Wide view of a festival stage with colorful lights over a dense audience",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "fd5eaea4e99c",
@@ -556,7 +766,8 @@
     "title": "Events / 40",
     "alt": "Guitarist bending forward amid white stage smoke",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "41eee1f5120e",
@@ -569,7 +780,8 @@
     "title": "Events / 41",
     "alt": "Singer in a green jacket playing a string instrument beneath a wooden canopy",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "7fa7f64b3f81",
@@ -582,7 +794,8 @@
     "title": "Events / 42",
     "alt": "Dancers in white costumes and colorful scarves leaping across a purple-lit stage",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "dac20afca0c3",
@@ -595,7 +808,8 @@
     "title": "Events / 43",
     "alt": "Singer in a brown cap raising one hand while performing with musicians",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "0495aad884f1",
@@ -608,7 +822,8 @@
     "title": "Events / 44",
     "alt": "Singer playing an acoustic guitar at a microphone",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "de8cf71ad65a",
@@ -621,7 +836,8 @@
     "title": "Events / 45",
     "alt": "Singer performing beside a drummer with a colorful turban and large drum",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "b738d4797e9b",
@@ -634,7 +850,8 @@
     "title": "Events / 46",
     "alt": "Performer facing a cheering crowd with both arms raised",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "3aa992662a25",
@@ -647,7 +864,8 @@
     "title": "Events / 47",
     "alt": "Close-up of a singer in a decorated dark jacket under bright stage lights",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "3f13eed44cfb",
@@ -660,7 +878,8 @@
     "title": "Events / 48",
     "alt": "Acoustic guitarist, singer, and violinist performing together on a purple-lit stage",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "165ecab21b98",
@@ -673,7 +892,8 @@
     "title": "Events / 49",
     "alt": "Violinist in a cap and sunglasses playing under colored stage lights",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "38497a38cd87",
@@ -686,7 +906,8 @@
     "title": "Events / 50",
     "alt": "Performers in colorful clothing beneath a glowing circular stage backdrop",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "2da9db40ed06",
@@ -699,7 +920,8 @@
     "title": "Events / 51",
     "alt": "Keyboardist playing on a dim stage beneath a wooden canopy",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "3669379c3259",
@@ -712,7 +934,8 @@
     "title": "Events / 52",
     "alt": "Singer in a dark striped jacket and sunglasses holding a microphone",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "10b984ff2ed5",
@@ -725,7 +948,8 @@
     "title": "Events / 53",
     "alt": "Singer in a bright coral outfit performing with a guitarist behind her",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "4935e9e31317",
@@ -738,7 +962,8 @@
     "title": "Events / 54",
     "alt": "Black-and-white photograph of a singer leaning back with a raised microphone",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "0b5ea9047062",
@@ -751,7 +976,8 @@
     "title": "Events / 55",
     "alt": "Singer in a red dress with puffed sleeves holding a microphone",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "8aff5c91319d",
@@ -764,7 +990,8 @@
     "title": "Motorsport / 16",
     "alt": "Rear view of a colorful drift car spinning its tires on a paved course",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "ec821acb2a27",
@@ -777,7 +1004,8 @@
     "title": "Motorsport / 17",
     "alt": "Orange drift car with white wheels and a large rear wing",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "ba59a0eceb5e",
@@ -790,7 +1018,8 @@
     "title": "Motorsport / 18",
     "alt": "Silver drift car surrounded by tire smoke with its door open",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "788252d21af9",
@@ -803,7 +1032,8 @@
     "title": "Motorsport / 19",
     "alt": "White drift car sliding between cones with a blurred background",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "a27c00c9648d",
@@ -816,7 +1046,8 @@
     "title": "Motorsport / 20",
     "alt": "Side view of a white drift car speeding across a marked course",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "57e4b49650f4",
@@ -829,7 +1060,8 @@
     "title": "Motorsport / 21",
     "alt": "Rear view of a white performance car sliding through a turn",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "8ae314799d2b",
@@ -842,7 +1074,8 @@
     "title": "Motorsport / 22",
     "alt": "White performance car approaching on a curved paved course",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "8bbad013b1a4",
@@ -855,7 +1088,8 @@
     "title": "Motorsport / 23",
     "alt": "Drift car with blue underbody lighting during a nighttime run",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "451b283eab01",
@@ -868,7 +1102,8 @@
     "title": "Motorsport / 24",
     "alt": "Panning photograph of a black race car passing trackside grandstands",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "feca19ea4c15",
@@ -881,7 +1116,8 @@
     "title": "Motorsport / 01",
     "alt": "Motorsport photograph 1 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "95dc7fe3414d",
@@ -894,7 +1130,8 @@
     "title": "Motorsport / 02",
     "alt": "A racing car captured in motion on the track",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "51c33a6b061f",
@@ -907,7 +1144,8 @@
     "title": "Motorsport / 03",
     "alt": "Motorsport photograph 3 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "212bcb0fc7f3",
@@ -920,7 +1158,8 @@
     "title": "Events / 01",
     "alt": "Events photograph 1 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "c2a7469514dd",
@@ -933,7 +1172,8 @@
     "title": "Events / 02",
     "alt": "Events photograph 2 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "f407e51089ef",
@@ -946,7 +1186,8 @@
     "title": "Events / 03",
     "alt": "Events photograph 3 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "41a74b258f27",
@@ -959,7 +1200,8 @@
     "title": "Motorsport / 04",
     "alt": "Motorsport photograph 4 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "66c3fecc6e23",
@@ -972,7 +1214,8 @@
     "title": "Motorsport / 05",
     "alt": "Motorsport photograph 5 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "73de899b127e",
@@ -985,7 +1228,8 @@
     "title": "Events / 04",
     "alt": "Events photograph 4 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "e1bdd276c74a",
@@ -998,7 +1242,8 @@
     "title": "Events / 05",
     "alt": "Events photograph 5 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "621822bc06d5",
@@ -1011,7 +1256,8 @@
     "title": "Events / 06",
     "alt": "Events photograph 6 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "b11d5fa60bf0",
@@ -1024,7 +1270,8 @@
     "title": "Events / 07",
     "alt": "Events photograph 7 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "90c824c3aaf5",
@@ -1037,7 +1284,8 @@
     "title": "Events / 08",
     "alt": "Events photograph 8 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "8344936da7ca",
@@ -1050,7 +1298,8 @@
     "title": "Motorsport / 06",
     "alt": "Motorsport photograph 6 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "e12e0ba27584",
@@ -1063,7 +1312,8 @@
     "title": "Motorsport / 07",
     "alt": "Motorsport photograph 7 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "6edee7b9106c",
@@ -1076,7 +1326,8 @@
     "title": "Events / 09",
     "alt": "Events photograph 9 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "7dbc41d7d1df",
@@ -1089,7 +1340,8 @@
     "title": "Events / 10",
     "alt": "Events photograph 10 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "ace6f907950c",
@@ -1102,7 +1354,8 @@
     "title": "Events / 11",
     "alt": "Events photograph 11 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "494343579d6e",
@@ -1115,7 +1368,8 @@
     "title": "Events / 12",
     "alt": "Events photograph 12 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "c7351c4adde4",
@@ -1128,7 +1382,8 @@
     "title": "Motorsport / 08",
     "alt": "Motorsport photograph 8 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "2fcdedc1197c",
@@ -1141,7 +1396,8 @@
     "title": "Motorsport / 09",
     "alt": "Motorsport photograph 9 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "91528d7e32d8",
@@ -1154,7 +1410,8 @@
     "title": "Events / 13",
     "alt": "Events photograph 13 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "cf3fa8818528",
@@ -1167,7 +1424,8 @@
     "title": "Events / 14",
     "alt": "Events photograph 14 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "25efec385313",
@@ -1180,7 +1438,8 @@
     "title": "Events / 15",
     "alt": "Events photograph 15 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "70f9aecf1a63",
@@ -1193,7 +1452,8 @@
     "title": "Motorsport / 10",
     "alt": "Motorsport photograph 10 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "d54627c0bfe2",
@@ -1206,7 +1466,8 @@
     "title": "Events / 16",
     "alt": "Events photograph 16 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "a254b5cabb44",
@@ -1219,7 +1480,8 @@
     "title": "Events / 56",
     "alt": "Events photograph 56 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "91b422863ff7",
@@ -1232,7 +1494,8 @@
     "title": "Events / 57",
     "alt": "Events photograph 57 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "117146237843",
@@ -1245,7 +1508,8 @@
     "title": "Motorsport / 11",
     "alt": "Motorsport photograph 11 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "54b0fb43fb73",
@@ -1258,7 +1522,8 @@
     "title": "Events / 58",
     "alt": "Events photograph 58 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "ae3ef34ed038",
@@ -1271,7 +1536,8 @@
     "title": "Motorsport / 12",
     "alt": "Motorsport photograph 12 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "d52ef4f41f15",
@@ -1284,7 +1550,8 @@
     "title": "Events / 59",
     "alt": "Events photograph 59 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "fa4bf3820f2b",
@@ -1297,7 +1564,8 @@
     "title": "Motorsport / 13",
     "alt": "Motorsport photograph 13 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "7bde8de978eb",
@@ -1310,7 +1578,8 @@
     "title": "Events / 60",
     "alt": "Events photograph 60 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "16390e97744c",
@@ -1323,7 +1592,8 @@
     "title": "Events / 61",
     "alt": "Events photograph 61 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "f2a762372302",
@@ -1336,7 +1606,8 @@
     "title": "Events / 62",
     "alt": "Events photograph 62 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "aa5a6bdde5b9",
@@ -1349,7 +1620,8 @@
     "title": "Events / 63",
     "alt": "A performer facing the crowd with arms raised",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "8036d7183371",
@@ -1362,7 +1634,8 @@
     "title": "Motorsport / 14",
     "alt": "Motorsport photograph 14 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "df18b3213d5d",
@@ -1375,7 +1648,8 @@
     "title": "Motorsport / 15",
     "alt": "Motorsport photograph 15 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "02c29207e257",
@@ -1388,7 +1662,8 @@
     "title": "Events / 64",
     "alt": "Events photograph 64 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "b2468b54d2cc",
@@ -1401,7 +1676,8 @@
     "title": "Events / 65",
     "alt": "Events photograph 65 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "4237c59bd0c4",
@@ -1414,7 +1690,8 @@
     "title": "Events / 66",
     "alt": "Events photograph 66 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "f79b170397da",
@@ -1427,7 +1704,8 @@
     "title": "Events / 67",
     "alt": "Events photograph 67 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "4bfdaf07a321",
@@ -1440,7 +1718,8 @@
     "title": "Events / 68",
     "alt": "Events photograph 68 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "7006d93d4e12",
@@ -1453,7 +1732,8 @@
     "title": "Events / 69",
     "alt": "Events photograph 69 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "da20336c8d0e",
@@ -1466,7 +1746,8 @@
     "title": "Events / 70",
     "alt": "Events photograph 70 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "6f67197d8390",
@@ -1479,7 +1760,8 @@
     "title": "Events / 71",
     "alt": "Events photograph 71 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "beb1b76e8f97",
@@ -1492,7 +1774,8 @@
     "title": "Events / 72",
     "alt": "Events photograph 72 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "72aa836e7b64",
@@ -1505,7 +1788,8 @@
     "title": "Events / 73",
     "alt": "Events photograph 73 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "0b7a1e28aeb7",
@@ -1518,7 +1802,8 @@
     "title": "Events / 74",
     "alt": "Events photograph 74 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "9e2697919fa4",
@@ -1531,7 +1816,8 @@
     "title": "Events / 75",
     "alt": "Events photograph 75 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "b7d757caaf82",
@@ -1544,7 +1830,8 @@
     "title": "Fashion / 03",
     "alt": "Fashion photograph 3 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "fe55f5dc1c7e",
@@ -1557,7 +1844,8 @@
     "title": "Fashion / 04",
     "alt": "Fashion photograph 4 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "c9090efea864",
@@ -1570,7 +1858,8 @@
     "title": "Fashion / 05",
     "alt": "Fashion photograph 5 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "6ef332e4aaa9",
@@ -1583,7 +1872,8 @@
     "title": "Fashion / 06",
     "alt": "Fashion photograph 6 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "84c74b88482b",
@@ -1596,7 +1886,8 @@
     "title": "Fashion / 07",
     "alt": "Fashion photograph 7 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "206b34745e0a",
@@ -1609,7 +1900,8 @@
     "title": "Fashion / 08",
     "alt": "Fashion photograph 8 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "277093324b7b",
@@ -1622,7 +1914,8 @@
     "title": "Fashion / 09",
     "alt": "Fashion photograph 9 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "278614665a0d",
@@ -1635,7 +1928,8 @@
     "title": "Street / 02",
     "alt": "Street photograph 2 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "a4db1080d455",
@@ -1648,7 +1942,8 @@
     "title": "Street / 03",
     "alt": "Street photograph 3 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "49d682993165",
@@ -1661,7 +1956,8 @@
     "title": "Street / 04",
     "alt": "Street photograph 4 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "efe620accbcb",
@@ -1674,7 +1970,8 @@
     "title": "Street / 05",
     "alt": "Street photograph 5 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "9ddafe4f9792",
@@ -1687,7 +1984,8 @@
     "title": "Street / 06",
     "alt": "Street photograph 6 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "5e802b3452bb",
@@ -1700,7 +1998,8 @@
     "title": "Street / 07",
     "alt": "Street photograph 7 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "dd242bc0c784",
@@ -1713,7 +2012,8 @@
     "title": "Street / 09",
     "alt": "Street photograph 9 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "3c524a04db24",
@@ -1726,7 +2026,8 @@
     "title": "Behind the lens / 01",
     "alt": "Personal photograph 1 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   },
   {
     "id": "9468b7ce9613",
@@ -1739,6 +2040,7 @@
     "title": "Behind the lens / 02",
     "alt": "Personal photograph 2 by Viku Singh",
     "featured": -1,
-    "recent": false
+    "recent": false,
+    "uploadBatch": 0
   }
 ]

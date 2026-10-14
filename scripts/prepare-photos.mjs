@@ -75,10 +75,11 @@ for (const file of files) {
     alt: overrides[relative]?.alt || descriptions[stem] || `${category} photograph ${counts[category]} by Viku Singh`,
     featured: featured.indexOf(stem),
     recent: overrides[relative]?.recent === true,
+    uploadBatch: overrides[relative]?.uploadBatch || 0,
   });
 }
 // New uploads lead every gallery view, including category filters.
-photos.sort((a,b) => Number(b.recent) - Number(a.recent) || (a.featured < 0 ? 999 : a.featured) - (b.featured < 0 ? 999 : b.featured) || Number(b.original.includes('/Archive/')) - Number(a.original.includes('/Archive/')));
+photos.sort((a,b) => Number(b.recent) - Number(a.recent) || b.uploadBatch - a.uploadBatch || (a.featured < 0 ? 999 : a.featured) - (b.featured < 0 ? 999 : b.featured) || Number(b.original.includes('/Archive/')) - Number(a.original.includes('/Archive/')));
 await mkdir(path.join(root, 'src/data'), { recursive:true });
 await writeFile(path.join(root, 'src/data/photos.json'), JSON.stringify(photos, null, 2) + '\n');
 console.log(`Prepared ${photos.length} photographs: ${JSON.stringify(counts)}`);
