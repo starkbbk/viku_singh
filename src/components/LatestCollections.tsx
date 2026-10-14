@@ -66,6 +66,7 @@ export default function LatestCollections({ photos, onExplore, onOpen }: {
                 <motion.div key={active.id} className="latest-photo-image" initial={reduced ? false : { opacity: .25, scale: .975, rotateY: 8 }} animate={{ opacity: 1, scale: 1, rotateY: 0 }} transition={{ duration: reduced ? 0 : .5, ease: [.2,.75,.2,1] }}>
                   <Image src={photo.src} alt={photo.alt} fill unoptimized sizes="(max-width: 800px) 85vw, 52vw" loading="lazy"/>
                 </motion.div>
+                <span className="new-photo-badge">NEW</span>
                 <span className="latest-expand"><Expand size={16}/></span>
               </button> : <div className="latest-photo-image"><Image src={photo.thumbnail} alt="" fill unoptimized loading="lazy" sizes="200px"/></div>}
               <div className="latest-print-caption"><span>{photo.title}</span><span>VS / {String((selection.frame + depth) % frames.length + 1).padStart(2, '0')}</span></div>

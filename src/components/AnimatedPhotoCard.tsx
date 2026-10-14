@@ -74,13 +74,14 @@ export default function AnimatedPhotoCard({ photo, index, onOpen }: {
             </motion.span>
           </span>
           <motion.span className="photo-glare" style={{ background: glare, opacity: reduced ? 0 : illumination }} aria-hidden="true"/>
+          {photo.recent && <span className="new-photo-badge">NEW</span>}
           <span className="photo-focus-corners" aria-hidden="true"><i/><i/><i/><i/></span>
           <span className="photo-hover"><span>VIEW PHOTOGRAPH</span><Expand size={18}/></span>
           <span className="photo-edge-light" aria-hidden="true"/>
         </motion.button>
       </div>
     </div>
-    <figcaption><span><span className="photo-category">{photo.category}{photo.recent ? " / NEW" : ""}</span><span className="photo-title">{photo.title}</span></span><span className="photo-number">{String(index + 1).padStart(2, '0')} <ArrowUpRight size={12}/></span></figcaption>
+    <figcaption><span><span className="photo-category">{photo.category}</span><span className="photo-title">{photo.title}</span></span><span className="photo-number">{String(index + 1).padStart(2, '0')} <ArrowUpRight size={12}/></span></figcaption>
     <span className="photo-caption-line" aria-hidden="true"/>
   </figure>;
 }

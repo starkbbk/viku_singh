@@ -54,3 +54,8 @@
   .latest-deck, .latest-photo-image { transform: none !important; }
   .latest-tab-background, .gallery-batches { animation: none !important; }
 }
+
+/* Upload status stays visible without hovering, on every recent photo. */
+.new-photo-badge { position: absolute; top: 12px; left: 12px; z-index: 4; background: var(--accent); color: #172013; padding: 7px 11px; border-radius: 20px; font: 600 10px/1 Arial, sans-serif; letter-spacing: .12em; box-shadow: 0 2px 12px #0003; pointer-events: none; }
+.new-photo-label { display: inline-block; margin-right: 10px; background: var(--accent); color: #172013; padding: 5px 8px; border-radius: 20px; font: 600 10px/1 Arial, sans-serif; letter-spacing: .1em; vertical-align: middle; }
+@media (max-width: 600px) { .new-photo-badge { top: 9px; left: 9px; padding: 6px 9px; font-size: 9px; } }
