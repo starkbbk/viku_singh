@@ -71,12 +71,13 @@ for (const file of files) {
   }
   counts[category] = (counts[category] || 0) + 1;
   photos.push({ id, category, src:full, thumbnail:thumb, original:`/portfolio/${relative}`, width, height,
-    title: `${category === 'Personal' ? 'Behind the lens' : category} / ${String(counts[category]).padStart(2,'0')}`,
+    title: overrides[relative]?.title || `${category === 'Personal' ? 'Behind the lens' : category} / ${String(counts[category]).padStart(2,'0')}`,
     alt: overrides[relative]?.alt || descriptions[stem] || `${category} photograph ${counts[category]} by Viku Singh`,
     featured: featured.indexOf(stem),
+    recent: overrides[relative]?.recent === true,
   });
 }
-photos.sort((a,b) => (a.featured < 0 ? 999 : a.featured) - (b.featured < 0 ? 999 : b.featured) || Number(b.original.includes('/Archive/')) - Number(a.original.includes('/Archive/')));
+photos.sort((a,b) => (a.featured < 0 ? 999 : a.featured) - (b.featured < 0 ? 999 : b.featured) || Number(b.recent) - Number(a.recent) || Number(b.original.includes('/Archive/')) - Number(a.original.includes('/Archive/')));
 await mkdir(path.join(root, 'src/data'), { recursive:true });
 await writeFile(path.join(root, 'src/data/photos.json'), JSON.stringify(photos, null, 2) + '\n');
 console.log(`Prepared ${photos.length} photographs: ${JSON.stringify(counts)}`);

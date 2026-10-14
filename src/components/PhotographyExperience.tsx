@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import CinematicLoader from './CinematicLoader';
 import RevealType from './RevealType';
+import LatestCollections from './LatestCollections';
 import AnimatedPhotoCard from './AnimatedPhotoCard';
 import usePhotoChoreography from './usePhotoChoreography';
 import { FilmstripTransition, FloatingGrain, SectionLens, ScrollProgress, useScrollReveals } from './ScrollEffects';
@@ -14,7 +15,7 @@ import { ArrowDown, ArrowLeft, ArrowRight, ArrowUpRight, Aperture, ChevronLeft, 
 
 interface Photo {
   id: string; category: string; src: string; thumbnail: string; original: string;
-  width: number; height: number; title: string; alt: string; featured: number;
+  width: number; height: number; title: string; alt: string; featured: number; recent?: boolean;
 }
 const GALLERY_BATCH_SIZE = 9;
 
@@ -115,6 +116,18 @@ export default function PhotographyExperience({ photos }: { photos: Photo[] }) {
     setPhotoDirection(direction);
     setActivePhoto(current => current === null ? null : (current + direction + photoCount) % photoCount);
   }, [photoCount]);
+  // Warm only the two neighbouring viewer images; full originals stay on demand.
+  const previousPhotoSrc = activePhoto === null ? null : filtered[(activePhoto - 1 + photoCount) % photoCount]?.src;
+  const nextPhotoSrc = activePhoto === null ? null : filtered[(activePhoto + 1) % photoCount]?.src;
+  useEffect(() => {
+    if (!photoIsOpen) return;
+    [previousPhotoSrc, nextPhotoSrc].forEach(src => {
+      if (!src) return;
+      const image = new window.Image();
+      image.decoding = 'async';
+      image.src = src;
+    });
+  }, [photoIsOpen, previousPhotoSrc, nextPhotoSrc]);
   const openPhoto = (index: number) => {
     setPhotoDirection(1);
     setActivePhoto(index);
@@ -182,12 +195,14 @@ export default function PhotographyExperience({ photos }: { photos: Photo[] }) {
         </div>
       </section>
 
+      <LatestCollections photos={photos} onExplore={selectFilter} onOpen={photo => { selectFilter(photo.category); setPhotoDirection(1); setActivePhoto(photos.filter(item => item.category === photo.category).findIndex(item => item.id === photo.id)); dialogRef.current?.showModal(); }}/>
+
       <FilmstripTransition photos={stripPhotos} onExplore={() => selectFilter('All')}/>
 
       <section id="portfolio" className="portfolio-section">
         <div className="section-kicker" data-reveal="text"><span><span className="live-dot"/> THE PHOTOGRAPHIC ARCHIVE</span><span>{photos.length} FRAMES · ONE PERSPECTIVE</span></div>
         <div className="archive-heading"><h2 className="motion-heading"><RevealType lines={['A closer look.']}/></h2><p data-reveal="text" data-reveal-delay="140">From the front row to the everyday.<br/>A collection of the way I see the world.</p></div>
-        <div className="gallery-toolbar" data-reveal="text"><div ref={filtersRef} className="filters" aria-label="Filter photographs">{categories.map(category => <button key={category} onClick={() => { selectFilter(category); requestAnimationFrame(() => document.getElementById('portfolio')?.scrollIntoView({ block: 'start', behavior: 'instant' })); }} aria-pressed={selectedFilter === category} className={selectedFilter === category ? 'active' : ''}>{category === 'All' ? 'All photographs' : category}<sup>{category === 'All' ? photos.length : photos.filter(photo => photo.category === category).length}</sup></button>)}</div><span className="gallery-count">{visiblePhotos.length} of {photoCount} photographs</span></div>
+        <div className="gallery-toolbar" data-reveal="text"><div ref={filtersRef} className="filters" aria-label="Filter photographs">{categories.map(category => <button key={category} onClick={() => { selectFilter(category); requestAnimationFrame(() => galleryRef.current?.scrollIntoView({ block: 'start', behavior: reducedMotion ? 'instant' : 'smooth' })); }} aria-pressed={selectedFilter === category} className={selectedFilter === category ? 'active' : ''}>{category === 'All' ? 'All photographs' : category}<sup>{category === 'All' ? photos.length : photos.filter(photo => photo.category === category).length}</sup></button>)}</div><span className="gallery-count">{visiblePhotos.length} of {photoCount} photographs</span></div>
         <div id="photo-gallery" className="gallery-batches" ref={galleryRef} key={selectedFilter}>
           {photoBatches.map((batch, batchIndex) => <div className="photo-grid" key={batchIndex}>
             {batch.map((photo, localIndex) => {

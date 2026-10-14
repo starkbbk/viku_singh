@@ -7,7 +7,7 @@ import { motion, useMotionTemplate, useMotionValue, useReducedMotion, useSpring,
 import { getPhotoMotion } from '@/lib/photo-motion';
 
 interface CardPhoto {
-  id: string; category: string; thumbnail: string; width: number; height: number; alt: string;
+  id: string; category: string; thumbnail: string; width: number; height: number; alt: string; title: string; recent?: boolean;
 }
 
 export default function AnimatedPhotoCard({ photo, index, onOpen }: {
@@ -80,7 +80,7 @@ export default function AnimatedPhotoCard({ photo, index, onOpen }: {
         </motion.button>
       </div>
     </div>
-    <figcaption><span>{photo.category}</span><span>{String(index + 1).padStart(2, '0')} <ArrowUpRight size={12}/></span></figcaption>
+    <figcaption><span><span className="photo-category">{photo.category}{photo.recent ? " / NEW" : ""}</span><span className="photo-title">{photo.title}</span></span><span className="photo-number">{String(index + 1).padStart(2, '0')} <ArrowUpRight size={12}/></span></figcaption>
     <span className="photo-caption-line" aria-hidden="true"/>
   </figure>;
 }

@@ -4,6 +4,7 @@ import './globals.css';
 import './photographic-motion.css';
 import './responsive.css';
 import './photo-effects.css';
+import './latest-collections.css';
 
 const display = localFont({
   src: '../../public/fonts/Anton-Regular.ttf',
