@@ -1,338 +1,733 @@
 {
   "Event/Archive/AC6E6CAF-F9EE-4B8A-98EB-BE4AD87A8237_1_105_c.jpg": {
-    "alt": "Singer in black performing on a dark stage above the audience"
+    "alt": "Singer in black performing on a dark stage above the audience",
+    "title": "A voice in the dark"
   },
   "Event/Archive/BC048A43-1056-469F-BDD3-64072FF53BA6_1_105_c.jpg": {
-    "alt": "Singer holding a microphone between two columns of stage fire"
+    "alt": "Singer holding a microphone between two columns of stage fire",
+    "title": "Between columns of fire"
   },
   "Event/Archive/DSC02741.jpg": {
-    "alt": "Wide view of a concert stage under red lights"
+    "alt": "Wide view of a concert stage under red lights",
+    "title": "Hammy Muzic stage"
   },
   "Event/Archive/DSC02746.jpg": {
-    "alt": "Performer in a checked shirt leaning toward the audience through stage smoke"
+    "alt": "Performer in a checked shirt leaning toward the audience through stage smoke",
+    "title": "Through the stage smoke"
   },
   "Event/Archive/DSC02833.jpg": {
-    "alt": "Singer in a cream shirt surrounded by red stage smoke"
+    "alt": "Singer in a cream shirt surrounded by red stage smoke",
+    "title": "Surrounded by red smoke"
   },
   "Event/Archive/DSC02868.jpg": {
-    "alt": "Singer performing in front of a red screen above raised phones"
+    "alt": "Singer performing in front of a red screen above raised phones",
+    "title": "Above a sea of phones"
   },
   "Event/Archive/DSC02884.jpg": {
-    "alt": "Singer raising one hand above a crowd recording the concert"
+    "alt": "Singer raising one hand above a crowd recording the concert",
+    "title": "One hand to the crowd"
   },
   "Event/Archive/DSC02890.jpg": {
-    "alt": "Crowded concert stage glowing with red lights and screen graphics"
+    "alt": "Crowded concert stage glowing with red lights and screen graphics",
+    "title": "Red lights, live music"
   },
   "Event/Archive/DSC02923.jpg": {
-    "alt": "Wide concert view with a singer raising an arm beneath warm lights"
+    "alt": "Wide concert view with a singer raising an arm beneath warm lights",
+    "title": "Under the festival lights"
   },
   "Event/Archive/DSC02985.jpg": {
-    "alt": "Performer walking across the stage in front of a blue screen"
+    "alt": "Performer walking across the stage in front of a blue screen",
+    "title": "Across the blue-lit stage"
   },
   "Event/Archive/DSC02989.jpg": {
-    "alt": "Performer holding a microphone against a red screen with a ring graphic"
+    "alt": "Performer holding a microphone against a red screen with a ring graphic",
+    "title": "A ring of red light"
   },
   "Event/Archive/DSC03044.jpg": {
-    "alt": "Close-up of a singer wearing a cap and holding a microphone"
+    "alt": "Close-up of a singer wearing a cap and holding a microphone",
+    "title": "At the microphone"
   },
   "Event/Archive/DSC03047.jpg": {
-    "alt": "Singer adjusting an in-ear monitor under a blue spotlight"
+    "alt": "Singer adjusting an in-ear monitor under a blue spotlight",
+    "title": "Finding the monitor mix"
   },
   "Event/Archive/DSC03054.jpg": {
-    "alt": "Full-length view of a singer in a cap at the front of the stage"
+    "alt": "Full-length view of a singer in a cap at the front of the stage",
+    "title": "At the edge of the stage"
   },
   "Event/Archive/DSC03294.jpg": {
-    "alt": "Singer leaning backward with a microphone against a bright red screen"
+    "alt": "Singer leaning backward with a microphone against a bright red screen",
+    "title": "Against a red screen"
   },
   "Event/Archive/DSC03491.jpg": {
-    "alt": "Singer in a textured dark jacket performing at a microphone stand"
+    "alt": "Singer in a textured dark jacket performing at a microphone stand",
+    "title": "Voice at the microphone"
   },
   "Event/Archive/DSC03508.jpg": {
-    "alt": "Singer smiling beside a microphone under red stage lights"
+    "alt": "Singer smiling beside a microphone under red stage lights",
+    "title": "A smile between songs"
   },
   "Event/Archive/DSC03512.jpg": {
-    "alt": "Singer raising both hands while performing at a microphone stand"
+    "alt": "Singer raising both hands while performing at a microphone stand",
+    "title": "Hands raised, music flowing"
   },
   "Event/Archive/DSC03517.jpg": {
-    "alt": "Side view of a singer at a microphone on a dark stage"
+    "alt": "Side view of a singer at a microphone on a dark stage",
+    "title": "A quiet spotlight"
   },
   "Event/Archive/DSC03633.jpg": {
-    "alt": "Singer performing in front of a fiery orange stage graphic"
+    "alt": "Singer performing in front of a fiery orange stage graphic",
+    "title": "Framed by firelight"
   },
   "Event/Archive/DSC03658.jpg": {
-    "alt": "Large nighttime concert stage with flame effects and a packed audience"
+    "alt": "Large nighttime concert stage with flame effects and a packed audience",
+    "title": "Flames above the crowd"
   },
   "Motorsport/Archive/DSC04135-2.jpg": {
-    "alt": "Rear view of a colorful drift car spinning its tires on a paved course"
+    "alt": "BMW 3 Series drift car with orange and purple graphics spinning its rear wheels",
+    "title": "BMW 3 Series · Drift build"
   },
   "Motorsport/Archive/DSC04195.jpg": {
-    "alt": "Orange drift car with white wheels and a large rear wing"
+    "alt": "Orange Nissan 350Z drift car with white wheels and a rear wing",
+    "title": "Nissan 350Z · Drift build"
   },
   "Motorsport/Archive/DSC04268.jpg": {
-    "alt": "Silver drift car surrounded by tire smoke with its door open"
+    "alt": "Silver BMW 3 Series drift car with a large rear wing and graphic livery",
+    "title": "BMW 3 Series · Drift session"
   },
   "Motorsport/Archive/DSC04345.jpg": {
-    "alt": "White drift car sliding between cones with a blurred background"
+    "alt": "Silver BMW 3 Series drift car with a large rear wing and graphic livery",
+    "title": "BMW 3 Series · Drift session"
   },
   "Motorsport/Archive/DSC04351.jpg": {
-    "alt": "Side view of a white drift car speeding across a marked course"
+    "alt": "Silver BMW 3 Series drift car with a large rear wing and graphic livery",
+    "title": "BMW 3 Series · Drift session"
   },
   "Motorsport/Archive/DSC04381.jpg": {
-    "alt": "Rear view of a white performance car sliding through a turn"
+    "alt": "Rear view of a silver BMW M2 with a large wing sliding through a turn",
+    "title": "BMW M2 · Through the turn"
   },
   "Motorsport/Archive/DSC04384.jpg": {
-    "alt": "White performance car approaching on a curved paved course"
+    "alt": "Silver BMW M2 with yellow running lights turning on a paved course",
+    "title": "BMW M2 · In motion"
   },
   "Motorsport/Archive/DSC04482.jpg": {
-    "alt": "Drift car with blue underbody lighting during a nighttime run"
+    "alt": "BMW 3 Series drift car with blue underbody lights on a nighttime course",
+    "title": "BMW 3 Series · Night drift"
   },
   "Motorsport/Archive/DSC04550-2.jpg": {
-    "alt": "Panning photograph of a black race car passing trackside grandstands"
+    "alt": "Black BMW M2 with a rear wing driving on a racetrack",
+    "title": "BMW M2 · On track"
   },
   "Event/Archive/DSC04855.jpg": {
-    "alt": "Two performers greeting a large crowd under golden stage lights"
+    "alt": "Two performers greeting a large crowd under golden stage lights",
+    "title": "Greeting the crowd"
   },
   "Event/Archive/DSC05037.jpg": {
-    "alt": "Wide view of a festival stage with colorful lights over a dense audience"
+    "alt": "Wide view of a festival stage with colorful lights over a dense audience",
+    "title": "South Side Story"
   },
   "Event/Archive/DSC05066.jpg": {
-    "alt": "Guitarist bending forward amid white stage smoke"
+    "alt": "Guitarist bending forward amid white stage smoke",
+    "title": "Guitar through the smoke"
   },
   "Event/Archive/DSC08430.jpg": {
-    "alt": "Singer in a green jacket playing a string instrument beneath a wooden canopy"
+    "alt": "Singer in a green jacket playing a string instrument beneath a wooden canopy",
+    "title": "Strings beneath the canopy"
   },
   "Event/Archive/IMG_0439.jpg": {
-    "alt": "Dancers in white costumes and colorful scarves leaping across a purple-lit stage"
+    "alt": "Dancers in white costumes and colorful scarves leaping across a purple-lit stage",
+    "title": "Scarves in flight"
   },
   "Event/Archive/IMG_0440.jpg": {
-    "alt": "Singer in a brown cap raising one hand while performing with musicians"
+    "alt": "Singer in a brown cap raising one hand while performing with musicians",
+    "title": "Voice and raised hands"
   },
   "Event/Archive/IMG_0442.jpg": {
-    "alt": "Singer playing an acoustic guitar at a microphone"
+    "alt": "Singer playing an acoustic guitar at a microphone",
+    "title": "Acoustic guitar, live on stage"
   },
   "Event/Archive/IMG_0715.jpg": {
-    "alt": "Singer performing beside a drummer with a colorful turban and large drum"
+    "alt": "Singer performing beside a drummer with a colorful turban and large drum",
+    "title": "Vocals and drumbeats"
   },
   "Event/Archive/IMG_0716.jpg": {
-    "alt": "Performer facing a cheering crowd with both arms raised"
+    "alt": "Performer facing a cheering crowd with both arms raised",
+    "title": "Arms raised to the crowd"
   },
   "Event/Archive/IMG_0723.jpg": {
-    "alt": "Close-up of a singer in a decorated dark jacket under bright stage lights"
+    "alt": "Close-up of a singer in a decorated dark jacket under bright stage lights",
+    "title": "A voice under bright lights"
   },
   "Event/Archive/IMG_2281.jpg": {
-    "alt": "Acoustic guitarist, singer, and violinist performing together on a purple-lit stage"
+    "alt": "Acoustic guitarist, singer, and violinist performing together on a purple-lit stage",
+    "title": "An acoustic trio"
   },
   "Event/Archive/IMG_2282.jpg": {
-    "alt": "Violinist in a cap and sunglasses playing under colored stage lights"
+    "alt": "Violinist in a cap and sunglasses playing under colored stage lights",
+    "title": "Violin under coloured lights"
   },
   "Event/Archive/IMG_3883.jpg": {
-    "alt": "Performers in colorful clothing beneath a glowing circular stage backdrop"
+    "alt": "Performers in colorful clothing beneath a glowing circular stage backdrop",
+    "title": "Beneath a glowing circle"
   },
   "Event/Archive/IMG_4002.jpg": {
-    "alt": "Keyboardist playing on a dim stage beneath a wooden canopy"
+    "alt": "Keyboardist playing on a dim stage beneath a wooden canopy",
+    "title": "Keys after dark"
   },
   "Event/Archive/IMG_4005.jpg": {
-    "alt": "Singer in a dark striped jacket and sunglasses holding a microphone"
+    "alt": "Singer in a dark striped jacket and sunglasses holding a microphone",
+    "title": "A voice in the spotlight"
   },
   "Event/Archive/IMG_4181.jpg": {
-    "alt": "Singer in a bright coral outfit performing with a guitarist behind her"
+    "alt": "Singer in a bright coral outfit performing with a guitarist behind her",
+    "title": "Vocals in warm light"
   },
   "Event/Archive/IMG_4182.jpg": {
-    "alt": "Black-and-white photograph of a singer leaning back with a raised microphone"
+    "alt": "Black-and-white photograph of a singer leaning back with a raised microphone",
+    "title": "A voice in monochrome"
   },
   "Event/Archive/IMG_6314.jpg": {
-    "alt": "Singer in a red dress with puffed sleeves holding a microphone"
+    "alt": "Singer in a red dress with puffed sleeves holding a microphone",
+    "title": "Red dress, live vocals"
   },
   "Event/026a01b4-7c2d-4117-a19a-7b9fa9a5c02d.JPG": {
-    "category": "Motorsport"
+    "category": "Motorsport",
+    "title": "BMW M2 · Tire smoke",
+    "alt": "Blue BMW M2 surrounded by tire smoke"
   },
   "Event/03124d5c-609f-44ca-ab19-cef83cdc2a2a.JPG": {
-    "category": "Motorsport"
+    "category": "Motorsport",
+    "title": "BMW M2 · On track",
+    "alt": "Black BMW M2 with a rear wing driving on a racetrack"
   },
   "Event/06dad40b-757a-4a53-8d2c-7d0ed7c80844.JPG": {
-    "category": "Motorsport"
+    "category": "Motorsport",
+    "title": "Performance car lineup",
+    "alt": "Detail of a blue coupe parked among a line of performance cars"
   },
   "Event/2de7bd2c-146f-4771-be6e-ea590c84a47c.JPG": {
-    "category": "Motorsport"
+    "category": "Motorsport",
+    "title": "BMW M4 · On track",
+    "alt": "Red BMW M4 coupe with number 90 driving around a racetrack"
   },
   "Event/2f4a6773-39fc-49a2-aa82-76664b0b5bb8.JPG": {
-    "category": "Motorsport"
+    "category": "Motorsport",
+    "title": "BMW SUV · On track",
+    "alt": "Silver BMW SUV driving on a racetrack"
   },
   "Event/4aac5cd8-ecf6-40b5-a98d-db50214c9611.JPG": {
-    "category": "Motorsport"
+    "category": "Motorsport",
+    "title": "BMW M2 · Drift session",
+    "alt": "Rear view of a blue BMW M2 drifting between cones"
   },
   "Event/5041e700-0f34-49e8-a415-a5e1c9c87c28.JPG": {
-    "category": "Motorsport"
+    "category": "Motorsport",
+    "title": "Performance car lineup",
+    "alt": "Detail of a blue coupe parked among a line of performance cars"
   },
   "Event/6263c93c-afba-4572-a460-24a48ddd6eb2.JPG": {
-    "category": "Motorsport"
+    "category": "Motorsport",
+    "title": "BMW M2 · Tire smoke",
+    "alt": "Blue BMW M2 surrounded by tire smoke"
   },
   "Event/6c2a2cd6-faee-430e-b247-b24e83a15491.JPG": {
-    "category": "Motorsport"
+    "category": "Motorsport",
+    "title": "BMW M4 · On track",
+    "alt": "Red BMW M4 coupe with number 90 driving around a racetrack"
   },
   "Event/99e8fc96-c3c9-4309-9708-33e04f06f699.JPG": {
-    "category": "Motorsport"
+    "category": "Motorsport",
+    "title": "BMW M2 · On track",
+    "alt": "Black BMW M2 with a rear wing driving on a racetrack"
   },
   "Event/c37b6374-dee4-4f6f-b204-a1b39cb9d138.JPG": {
-    "category": "Motorsport"
+    "category": "Motorsport",
+    "title": "BMW 3 Series · Drift run",
+    "alt": "Turquoise BMW 3 Series sedan with number 117 drifting between cones"
   },
   "Event/d7b393da-2533-4024-9d80-f1aad6966bcf.JPG": {
-    "category": "Motorsport"
+    "category": "Motorsport",
+    "title": "BMW 3 Series · Drift run",
+    "alt": "Turquoise BMW 3 Series sedan with number 117 drifting between cones"
   },
   "Event/d7d02646-3b1a-44c1-9f2c-004bd3194988.JPG": {
-    "category": "Motorsport"
+    "category": "Motorsport",
+    "title": "BMW M2 · On track",
+    "alt": "Black BMW M2 with a rear wing driving on a racetrack"
   },
   "Event/e9154f79-6eb2-4594-944f-82fb4e74e645.JPG": {
-    "category": "Motorsport"
+    "category": "Motorsport",
+    "title": "BMW M2 · Tire smoke",
+    "alt": "Blue BMW M2 surrounded by tire smoke"
   },
   "Event/e9e3e961-a0b5-46f4-9773-f0923a09a0d5.JPG": {
-    "category": "Motorsport"
+    "category": "Motorsport",
+    "title": "BMW 3 Series · Drift build",
+    "alt": "BMW 3 Series drift car with orange and purple graphics spinning its rear wheels"
   },
   "Motorsport/Latest/IMG_7081.jpg": {
     "title": "Smoke & mirrors",
-    "alt": "Rear view of a blue and white BMW drifting between track cones",
-    "recent": true
+    "alt": "Rear view of a blue and white BMW drifting between track cones"
   },
   "Motorsport/Latest/IMG_7082.jpg": {
     "title": "Sideways, in red",
-    "alt": "Red and black drift car sliding across the track with tyre smoke",
-    "recent": true
+    "alt": "Red and black drift car sliding across the track with tyre smoke"
   },
   "Motorsport/Latest/IMG_7083.jpg": {
     "title": "The last light",
-    "alt": "Red and black drift car accelerating away beneath a warm stormy sky",
-    "recent": true
+    "alt": "Red and black drift car accelerating away beneath a warm stormy sky"
   },
   "Motorsport/Latest/IMG_7084.jpg": {
     "title": "On the edge",
-    "alt": "Rear three-quarter view of a red and black drift car in motion",
-    "recent": true
+    "alt": "Rear three-quarter view of a red and black drift car in motion"
   },
   "Motorsport/Latest/IMG_7087.jpg": {
     "title": "Full throttle",
-    "alt": "Close view of a turquoise drift car with a spinning rear wheel and tyre smoke",
-    "recent": true
+    "alt": "Close view of a turquoise drift car with a spinning rear wheel and tyre smoke"
   },
   "Motorsport/Latest/IMG_7088.jpg": {
     "title": "Chasing the blur",
-    "alt": "Rear view of a white sports coupe in motion against a blurred track background",
-    "recent": true
+    "alt": "Rear view of a white sports coupe in motion against a blurred track background"
   },
   "Motorsport/Latest/IMG_7089.jpg": {
     "title": "Golden apex",
-    "alt": "White sports coupe with yellow headlights captured in a panning photograph",
-    "recent": true
+    "alt": "White sports coupe with yellow headlights captured in a panning photograph"
   },
   "Event/Latest/IMG_6982.jpg": {
     "title": "Under golden lights",
-    "alt": "Singer holding a gold microphone under warm yellow stage lights",
-    "recent": true
+    "alt": "Singer holding a gold microphone under warm yellow stage lights"
   },
   "Event/Latest/IMG_6981.jpg": {
     "title": "One voice, a thousand echoes",
-    "alt": "Black and white photograph of a singer facing a crowd with a raised microphone",
-    "recent": true
+    "alt": "Black and white photograph of a singer facing a crowd with a raised microphone"
   },
   "Event/Latest/IMG_6887.jpg": {
     "title": "A little electric",
-    "alt": "Singer with a pink microphone in a silver stage outfit against purple lights",
-    "recent": true
+    "alt": "Singer with a pink microphone in a silver stage outfit against purple lights"
   },
   "Event/Latest/IMG_6885.jpg": {
     "title": "Colour in the air",
-    "alt": "Singer reaching toward the audience through circular rainbow lens flares",
-    "recent": true
+    "alt": "Singer reaching toward the audience through circular rainbow lens flares"
   },
   "Event/Latest/IMG_6955.jpg": {
     "title": "Every note matters",
-    "alt": "Close-up of a singer in a black and red stage jacket holding a microphone",
-    "recent": true
+    "alt": "Close-up of a singer in a black and red stage jacket holding a microphone"
   },
   "Event/Latest/IMG_6957.jpg": {
     "title": "Between the verses",
-    "alt": "Singer gesturing with one hand while holding a microphone under red stage lights",
-    "recent": true
+    "alt": "Singer gesturing with one hand while holding a microphone under red stage lights"
   },
   "Event/Latest/IMG_6958.jpg": {
     "title": "After the encore",
-    "alt": "Red and gold decorative stage hat isolated against a dark background",
-    "recent": true
+    "alt": "Red and gold decorative stage hat isolated against a dark background"
   },
   "Event/Latest/IMG_6886.jpg": {
     "title": "A smile between songs",
-    "alt": "Smiling singer in a silver stage outfit holding a pink microphone against colourful stage graphics",
-    "recent": true
+    "alt": "Smiling singer in a silver stage outfit holding a pink microphone against colourful stage graphics"
   },
   "Event/Latest/IMG_6705.jpg": {
     "title": "Layers of live music",
     "alt": "Concert collage of a bassist, a band and crowds under colourful stage lights",
-    "recent": true,
     "uploadBatch": 2
   },
   "Event/Latest/IMG_6703.jpg": {
     "title": "A frame within the crowd",
     "alt": "Concert crowd and stage presented with a rounded inset frame under golden lights",
-    "recent": true,
     "uploadBatch": 2
   },
   "Event/Latest/IMG_6868.jpg": {
     "title": "Inside the rainbow",
     "alt": "Smiling singer in a silver outfit surrounded by rainbow lens flares on stage",
-    "recent": true,
     "uploadBatch": 2
   },
   "Fashion/Latest/IMG_6875.jpg": {
     "title": "After-dark attitude",
     "alt": "Full-length posed portrait in a silver outfit and embellished boots outside at night",
-    "recent": true,
     "uploadBatch": 2
   },
   "Fashion/Latest/IMG_6877.jpg": {
     "title": "Silver reflections",
     "alt": "Posed portrait in a silver embellished outfit inside a dark metallic lift",
-    "recent": true,
     "uploadBatch": 2
   },
   "Event/Latest/IMG_6894.jpg": {
     "title": "A pause in blue",
     "alt": "Singer seated on a stage platform holding a pink microphone against a blue backdrop",
-    "recent": true,
     "uploadBatch": 2
   },
   "Fashion/Latest/IMG_6882.jpg": {
     "title": "Reflections in motion",
     "alt": "Seated portrait in a silver embellished outfit with one arm raised inside a lift",
-    "recent": true,
     "uploadBatch": 2
   },
   "Event/Latest/IMG_6700.jpg": {
     "title": "Raise the room",
     "alt": "Two performers facing a packed concert crowd under golden stage lights",
-    "recent": true,
     "uploadBatch": 2
   },
   "Event/Latest/IMG_6884.jpg": {
     "title": "Prismatic voice",
     "alt": "Singer performing with a pink microphone surrounded by circular rainbow lens flares",
-    "recent": true,
     "uploadBatch": 2
   },
   "Event/Latest/IMG_6699.jpg": {
     "title": "South Side, in green",
     "alt": "Wide view of the South Side Story concert stage with green lights and a packed crowd",
-    "recent": true,
     "uploadBatch": 2
   },
   "Event/Latest/IMG_6706.jpg": {
     "title": "Your turn to sing",
     "alt": "Long-haired singer extending a microphone toward the audience in a selective-colour portrait",
-    "recent": true,
     "uploadBatch": 2
   },
   "Event/Latest/IMG_6701.jpg": {
     "title": "A thousand hands",
     "alt": "Wide view of the South Side Story concert with a band under white and gold lights above raised hands",
-    "recent": true,
     "uploadBatch": 2
+  },
+  "Fashion/04bf13aa-b728-45f2-80e2-35e384a6366c.JPG": {
+    "title": "Red studio editorial",
+    "alt": "Studio fashion portrait in a red dress against a black backdrop"
+  },
+  "Street/a6d35c02-a9af-4001-b233-2fcbfcc4405a.JPG": {
+    "title": "Flower market after dark",
+    "alt": "A busy flower market beneath warm strings of lights"
+  },
+  "Fashion/42a34cc4-99db-4bec-89c3-5bd56c0c29cb.JPG": {
+    "title": "Black studio look",
+    "alt": "Seated fashion portrait in a black outfit against a white studio backdrop"
+  },
+  "Street/026c30df-6c91-4920-b34f-5ebf47e39607.JPG": {
+    "title": "A flower and a glance",
+    "alt": "A child looking up with a white flower resting on their forehead"
+  },
+  "Fashion/7c224c2a-3214-4990-885b-150a52cb6761.JPG": {
+    "title": "Denim & burgundy",
+    "alt": "Studio fashion portrait in a burgundy top and wide-leg blue jeans"
+  },
+  "Fashion/8feaebae-e9f3-4952-80d0-a431bd69d6ba.JPG": {
+    "title": "Wide-leg studio editorial",
+    "alt": "Full-length studio fashion portrait in a burgundy top and wide-leg jeans"
+  },
+  "Fashion/dd276f26-cc2d-4035-8ca1-29d9c1db4bc1.JPG": {
+    "title": "All-black editorial",
+    "alt": "Studio fashion portrait in an all-black outfit against a pale backdrop"
+  },
+  "Fashion/f588fead-4785-467d-b020-adff03cfab75.JPG": {
+    "title": "Sunglasses & denim",
+    "alt": "Studio fashion portrait with sunglasses, a burgundy top and blue jeans"
+  },
+  "Fashion/IMG_1596.JPG": {
+    "title": "Runway — sculptural headpiece",
+    "alt": "Runway look with a tall sculptural headpiece and patterned jacket"
+  },
+  "Fashion/IMG_1597.JPG": {
+    "title": "Runway — statement headwear",
+    "alt": "Runway look with a sculptural circular headpiece and a pale dress"
+  },
+  "Fashion/IMG_1598.JPG": {
+    "title": "Runway — floral details",
+    "alt": "Runway look with floral sleeves and a spiked black headpiece"
+  },
+  "Street/39ca6b35-d263-4291-a05a-b8a4f6cccc27.JPG": {
+    "title": "A bouquet of pink",
+    "alt": "A child holding a large bouquet of pink flowers on a street"
+  },
+  "Street/7a034456-8798-446b-828d-a50fa626e893.JPG": {
+    "title": "A street-side pause",
+    "alt": "Black-and-white street photograph of a seated person beside cooking pots and a shutter"
+  },
+  "Street/80de770d-2e5c-4d0a-90c5-5b3c34a4be31.JPG": {
+    "title": "At the flower stall",
+    "alt": "A flower seller arranging bright garlands at a market stall"
+  },
+  "Street/89bbbd20-b13c-4370-a9c9-3dcb63d10a51.JPG": {
+    "title": "Rickshaw, in passing",
+    "alt": "Black-and-white street photograph of a cycle rickshaw passing storefronts"
+  },
+  "Street/9496e548-972f-42d9-92f1-34519ff23b7c.JPG": {
+    "title": "Among the petals",
+    "alt": "A child sitting on the ground among scattered flowers and petals"
+  },
+  "Street/95d624e6-d3bd-4655-a975-052d215c5856.JPG": {
+    "title": "Market preparations",
+    "alt": "A seated vendor sorting produce at a market stall"
+  },
+  "Street/deda56da-e267-4ce6-a046-e81066aff158.JPG": {
+    "title": "Sorting the day’s flowers",
+    "alt": "A group of people sitting together and sorting flowers at a market"
+  },
+  "viku/0c24dbaf-c614-42fa-b442-e7d1902ed50e.JPG": {
+    "title": "Behind the lens — studio study",
+    "alt": "Seated studio photograph in a light denim outfit against a white backdrop"
+  },
+  "viku/a00fc7ab-36b7-4f5c-917c-85a99084a004.JPG": {
+    "title": "Behind the lens — monochrome",
+    "alt": "Black-and-white seated studio photograph against a plain backdrop"
+  },
+  "Event/e6c4d66f-29ff-49e7-809b-4e969c02cfe5.JPG": {
+    "title": "Facing the crowd",
+    "alt": "A performer facing the crowd with arms raised"
+  },
+  "Event/1f34c60f-c24a-49b5-92ce-77b57ee3e46b.JPG": {
+    "title": "Vocals beneath golden lights",
+    "alt": "Singer in a red dress performing beneath golden stage decorations"
+  },
+  "Event/227b6d87-68ed-4891-b238-b74993aff70c.JPG": {
+    "title": "An acoustic moment",
+    "alt": "Singer playing an acoustic guitar at a microphone in warm red light"
+  },
+  "Event/2965e099-b8f8-4a2a-a4a2-4111a9d78cf8.JPG": {
+    "title": "Violin under coloured lights",
+    "alt": "Violinist playing beneath coloured stage lights"
+  },
+  "Event/35455759-90f9-47e3-a4d3-3f2f2dfc2136.JPG": {
+    "title": "Pink beneath the spotlights",
+    "alt": "Singer in a pink outfit performing beneath radiating stage lights"
+  },
+  "Event/38d8c8f1-d0be-48c0-aa1d-665a11551375.JPG": {
+    "title": "Hands above the keys",
+    "alt": "Performer behind a keyboard with both hands raised in blue stage light"
+  },
+  "Event/3ac5e3d0-938e-4c3c-ab84-250b37e48271.JPG": {
+    "title": "Strings and golden light",
+    "alt": "Singer playing a string instrument beneath golden stage decorations"
+  },
+  "Event/3bdbcce7-a792-4393-b28d-2760c9523d62.JPG": {
+    "title": "A song in purple light",
+    "alt": "Singer holding a microphone and raising one hand under purple stage lights"
+  },
+  "Event/3d70932a-3772-4836-a5d8-6dac796b58c2.JPG": {
+    "title": "Strings beneath the canopy",
+    "alt": "Singer in a green jacket playing a string instrument beneath a wooden canopy"
+  },
+  "Event/5110bce8-fff9-4e1c-b40d-09d9e8b8f12a.JPG": {
+    "title": "Acoustic guitar, live on stage",
+    "alt": "Singer playing an acoustic guitar at a microphone"
+  },
+  "Event/5c222b01-1759-4b10-a0b8-477a10fe0097.JPG": {
+    "title": "Vocals with the band",
+    "alt": "Singer raising one hand while performing with a band under purple stage lights"
+  },
+  "Event/5efacc1a-c325-4410-a547-a02628630219.JPG": {
+    "title": "Vocals in blue and gold",
+    "alt": "Singer holding a microphone beneath blue and gold stage lights"
+  },
+  "Event/6235e189-b240-455e-b119-4fd787d88662.JPG": {
+    "title": "An acoustic trio",
+    "alt": "An acoustic guitarist, singer and violinist performing together on a purple-lit stage"
+  },
+  "Event/7de304fd-77a7-4ac8-af6d-0d039ece7653.JPG": {
+    "title": "Flute under the spotlight",
+    "alt": "Musician playing a flute at a microphone beneath coloured stage lights"
+  },
+  "Event/80a9d234-c9a9-492a-ad40-f34ee7b8a7ad.JPG": {
+    "title": "Voice and raised hands",
+    "alt": "Singer raising one hand while performing with musicians under purple lights"
+  },
+  "Event/8dc0d1af-b3b4-4f60-a293-63973a3a282d.JPG": {
+    "title": "An electric guitar moment",
+    "alt": "Musician looking down while playing an electric guitar in warm red light"
+  },
+  "Event/9e296412-8c86-4205-bf06-17916ef89b1a.JPG": {
+    "title": "Vocals beneath golden lights",
+    "alt": "Singer in a red dress performing beneath golden stage decorations"
+  },
+  "Event/b2593d4d-d976-41ed-8f5d-d475e5367286.JPG": {
+    "title": "Strings and golden light",
+    "alt": "Singer playing a string instrument beneath golden stage decorations"
+  },
+  "Event/c24c38dc-515f-4610-abac-c6bc036b197b.JPG": {
+    "title": "Vocals in blue and gold",
+    "alt": "Singer holding a microphone beneath blue and gold stage lights"
+  },
+  "Event/d1a6b195-a146-464a-ae86-789e607e10c5.JPG": {
+    "title": "Vocals and drumbeats",
+    "alt": "Singer performing beside a drummer holding a large drum"
+  },
+  "Event/d7c48394-07af-41fe-98e8-caea899dcca5.JPG": {
+    "title": "A song under purple lights",
+    "alt": "Singer in a white outfit holding a microphone under purple stage lights"
+  },
+  "Event/df973b95-abae-4441-80fb-f7fb38dbbf55.JPG": {
+    "title": "A voice under bright lights",
+    "alt": "Close-up of a singer under bright stage lights"
+  },
+  "Event/e489ee6f-9740-4d48-a4d3-41decc6ce45b.JPG": {
+    "title": "Strings beneath the canopy",
+    "alt": "Singer in a green jacket playing a string instrument beneath a wooden canopy"
+  },
+  "Event/e5e7e00f-6961-484b-9e27-e4f9b039fc4d.JPG": {
+    "title": "A burst of stage smoke",
+    "alt": "Performer beside a burst of smoke on a dark stage"
+  },
+  "Event/f94dece2-f49b-4fc6-84b1-2a7e51fd2db4.JPG": {
+    "title": "A voice under bright lights",
+    "alt": "Close-up of a singer holding a microphone under bright stage lights"
+  },
+  "Event/fb81c0dc-11d4-4ac8-b4e2-ff6cb23204a7.JPG": {
+    "title": "Scarves in flight",
+    "alt": "Dancers in white costumes leaping with colourful scarves across a purple-lit stage"
+  },
+  "Event/IMG_1586.JPG": {
+    "title": "Vocals across the stage",
+    "alt": "Singers and dancers performing together beneath red and blue stage lights"
+  },
+  "Event/IMG_1587.JPG": {
+    "title": "Together under the spotlights",
+    "alt": "Vocalists spread across a stage beneath coloured spotlights"
+  },
+  "Event/IMG_1588.JPG": {
+    "title": "A chorus in motion",
+    "alt": "Singers performing together beneath red and blue stage lights"
+  },
+  "Event/IMG_1589.JPG": {
+    "title": "ASEAN-India Music Festival 2024",
+    "alt": "Singer and bass guitarist on a stage beside an ASEAN-India Music Festival 2024 banner"
+  },
+  "Event/IMG_1590.JPG": {
+    "title": "At the piano",
+    "alt": "Performer seated at a piano on a dark stage with blue and gold light"
+  },
+  "Event/IMG_1591.JPG": {
+    "title": "ASEAN-India Music Festival 2024",
+    "alt": "Singer and bass guitarist performing beside an ASEAN-India Music Festival 2024 banner"
+  },
+  "Event/IMG_1592.JPG": {
+    "title": "ASEAN-India Music Festival 2024",
+    "alt": "A band performing beneath warm lights between ASEAN-India Music Festival 2024 banners"
+  },
+  "Event/IMG_1593.JPG": {
+    "title": "Band under the stage beams",
+    "alt": "Singer with a band beneath bright white stage beams"
+  },
+  "Event/IMG_1594.JPG": {
+    "title": "A voice against the dark",
+    "alt": "Side view of a singer holding a microphone against a dark stage"
+  },
+  "Event/IMG_1595.JPG": {
+    "title": "Gold in motion",
+    "alt": "A group of singers and dancers in gold costumes performing under blue stage lights"
+  },
+  "Event/2026-10-23/IMG_0732.jpg": {
+    "category": "Events",
+    "title": "Under the festival lights",
+    "alt": "A singer in a white jacket and red skirt performing beneath teal and golden stage lights",
+    "uploadBatch": 20261023
+  },
+  "Event/2026-10-23/IMG_0341.jpg": {
+    "category": "Events",
+    "title": "Strings in warm light",
+    "alt": "A guitarist playing beneath red and green concert lights",
+    "uploadBatch": 20261023
+  },
+  "Event/2026-10-23/IMG_0717.jpg": {
+    "category": "Events",
+    "title": "A microphone to the crowd",
+    "alt": "A performer in a red dress extending a microphone toward the crowd under golden stage lights",
+    "uploadBatch": 20261023
+  },
+  "Event/2026-10-23/IMG_0714.jpg": {
+    "category": "Events",
+    "title": "A voice in red",
+    "alt": "A singer in a red dress performing into a microphone against a dark stage",
+    "uploadBatch": 20261023
+  },
+  "Event/2026-10-23/IMG_7171.jpg": {
+    "category": "Events",
+    "title": "A voice in double exposure",
+    "alt": "A black-and-white double exposure combining a singer with a wider view of the concert stage",
+    "uploadBatch": 20261023
+  },
+  "Event/2026-10-23/IMG_6963.jpg": {
+    "category": "Events",
+    "title": "Vilen stage",
+    "alt": "A performer holding a microphone beneath a stage screen displaying VILEN",
+    "uploadBatch": 20261023
+  },
+  "Event/2026-10-23/IMG_7170.jpg": {
+    "category": "Events",
+    "title": "A song in magenta",
+    "alt": "A seated singer in an orange outfit beneath bright magenta concert lights",
+    "uploadBatch": 20261023
+  },
+  "Event/2026-10-23/IMG_0712.jpg": {
+    "category": "Events",
+    "title": "Vocals beneath golden lights",
+    "alt": "A singer in a red dress performing beneath a golden stage canopy",
+    "uploadBatch": 20261023
+  },
+  "Event/2026-10-30/IMG_7223.jpg": {
+    "category": "Events",
+    "title": "Under the stage lights",
+    "alt": "Under the stage lights — a live concert photograph",
+    "uploadBatch": 20261030
+  },
+  "Event/2026-10-30/IMG_7226.jpg": {
+    "category": "Events",
+    "title": "Fire on stage",
+    "alt": "Fire on stage — a live concert photograph",
+    "uploadBatch": 20261030
+  },
+  "Event/2026-10-30/IMG_7237.jpg": {
+    "category": "Events",
+    "title": "A moment in red",
+    "alt": "A moment in red — a live concert photograph",
+    "uploadBatch": 20261030
+  },
+  "Event/2026-10-30/IMG_7234.jpg": {
+    "category": "Events",
+    "title": "The crowd and the stage",
+    "alt": "The crowd and the stage — a live concert photograph",
+    "uploadBatch": 20261030
+  },
+  "Event/2026-10-30/IMG_7227.jpg": {
+    "category": "Events",
+    "title": "Reaching out to the crowd",
+    "alt": "Reaching out to the crowd — a live concert photograph",
+    "uploadBatch": 20261030
+  },
+  "Event/2026-10-30/IMG_7224.jpg": {
+    "category": "Events",
+    "title": "Voices and flames",
+    "alt": "Voices and flames — a live concert photograph",
+    "uploadBatch": 20261030
+  },
+  "Event/2026-10-30/IMG_7246.jpg": {
+    "category": "Events",
+    "title": "Fireworks over the crowd",
+    "alt": "Fireworks over the crowd — a live concert photograph",
+    "uploadBatch": 20261030
+  },
+  "Event/2026-10-30/IMG_7225.jpg": {
+    "category": "Events",
+    "title": "Together on stage",
+    "alt": "Together on stage — a live concert photograph",
+    "uploadBatch": 20261030
+  },
+  "Event/2026-10-30/IMG_7236.jpg": {
+    "category": "Events",
+    "title": "A crowd in motion",
+    "alt": "A crowd in motion — a live concert photograph",
+    "uploadBatch": 20261030
+  },
+  "Event/2026-10-30/IMG_7238.jpg": {
+    "category": "Events",
+    "title": "Performing together",
+    "alt": "Performing together — a live concert photograph",
+    "uploadBatch": 20261030
+  },
+  "Event/2026-10-30/IMG_7242.jpg": {
+    "category": "Events",
+    "title": "A voice in the spotlight",
+    "alt": "A voice in the spotlight — a live concert photograph",
+    "uploadBatch": 20261030
+  },
+  "Event/2026-10-30/IMG_7235.jpg": {
+    "category": "Events",
+    "title": "Lights and live music",
+    "alt": "Lights and live music — a live concert photograph",
+    "uploadBatch": 20261030
   }
 }

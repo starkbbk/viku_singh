@@ -81,7 +81,10 @@ export default function AnimatedPhotoCard({ photo, index, onOpen }: {
         </motion.button>
       </div>
     </div>
-    <figcaption><span><span className="photo-category">{photo.category}</span><span className="photo-title">{photo.title}</span></span><span className="photo-number">{String(index + 1).padStart(2, '0')} <ArrowUpRight size={12}/></span></figcaption>
+    <figcaption>
+      <span className="photo-caption-copy"><span className="photo-caption-title">{photo.title}</span><span className="photo-caption-category">{photo.category}</span></span>
+      <span className="photo-caption-number">{String(index + 1).padStart(2, '0')} <ArrowUpRight size={12}/></span>
+    </figcaption>
     <span className="photo-caption-line" aria-hidden="true"/>
   </figure>;
 }

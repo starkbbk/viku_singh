@@ -100,3 +100,23 @@
   .section-lens-ring { transform: none !important; }
   .booking-button:before, .view-more-button:before, .archive-rail:before { display: none; }
 }
+
+/* Subject names stay readable beneath photos and in the full-screen viewer. */
+.photo-card figcaption { align-items: flex-start; gap: 14px; }
+.photo-caption-copy { display: flex; flex-direction: column; min-width: 0; gap: 6px; }
+.photo-caption-title { color: var(--foreground); font-size: 15px; line-height: 1.4; letter-spacing: 0; text-transform: none; overflow-wrap: anywhere; }
+.photo-caption-category { font-size: 10px; line-height: 1.4; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.photo-caption-number { flex-shrink: 0; padding-top: 3px; }
+.lightbox-photo-info { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.lightbox-photo-title { line-height: 1.4; }
+.lightbox-photo-category { color: var(--muted); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
+@media (max-width: 600px) {
+  .photo-caption-title { font-size: 13px; }
+  .photo-caption-category { font-size: 9px; letter-spacing: .07em; }
+  .photo-card figcaption { gap: 8px; }
+}
+@media (max-height: 500px) {
+  .lightbox-photo-info { gap: 2px; }
+  .lightbox-photo-title { font-size: 12px; }
+  .lightbox-photo-category { font-size: 9px; }
+}

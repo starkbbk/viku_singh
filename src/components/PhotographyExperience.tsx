@@ -51,7 +51,7 @@ export default function PhotographyExperience({ photos }: { photos: Photo[] }) {
   const galleryRef = useRef<HTMLDivElement>(null);
   const filtersRef = useRef<HTMLDivElement>(null);
   const [showIntro, setShowIntro] = useState(true);
-  const finishIntro = useCallback(() => setShowIntro(false), []);
+  const finishIntro = useCallback(() => setShowIntro(false), [setShowIntro]);
   const dialogRef = useRef<HTMLDialogElement>(null);
   const menuRef = useRef<HTMLElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
@@ -117,7 +117,7 @@ export default function PhotographyExperience({ photos }: { photos: Photo[] }) {
   const changePhoto = useCallback((direction: number) => {
     setPhotoDirection(direction);
     setActivePhoto(current => current === null ? null : (current + direction + photoCount) % photoCount);
-  }, [photoCount]);
+  }, [photoCount, setPhotoDirection, setActivePhoto]);
   // Warm only the two neighbouring viewer images; full originals stay on demand.
   const previousPhotoSrc = activePhoto === null ? null : filtered[(activePhoto - 1 + photoCount) % photoCount]?.src;
   const nextPhotoSrc = activePhoto === null ? null : filtered[(activePhoto + 1) % photoCount]?.src;
@@ -228,7 +228,7 @@ export default function PhotographyExperience({ photos }: { photos: Photo[] }) {
 
     <dialog className="lightbox" ref={dialogRef} onClose={() => setActivePhoto(null)} aria-label="Photograph viewer" onClick={event => { if (event.target === event.currentTarget) closePhoto(); }} onTouchStart={event => { touchStart.current = event.touches.length === 1 ? { x: event.touches[0].clientX, y: event.touches[0].clientY, identifier: event.touches[0].identifier } : null; }} onTouchMove={event => { if (event.touches.length !== 1) touchStart.current = null; }} onTouchCancel={() => { touchStart.current = null; }} onTouchEnd={event => { const start = touchStart.current; touchStart.current = null; if (!start || event.touches.length || event.changedTouches.length !== 1 || event.changedTouches[0].identifier !== start.identifier) return; const dx = event.changedTouches[0].clientX - start.x; const dy = event.changedTouches[0].clientY - start.y; if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.4) changePhoto(dx < 0 ? 1 : -1); }}>
       <div className="lightbox-top"><span>VIKU SINGH / {filtered[activePhoto ?? 0]?.category.toUpperCase()}</span><button className="icon-button" autoFocus onClick={closePhoto} aria-label="Close photograph"><X size={25}/></button></div>
-      {activePhoto !== null && filtered[activePhoto] && <><div className="lightbox-main"><button className="lightbox-nav previous" aria-label="Previous photograph" onClick={() => changePhoto(-1)}><ChevronLeft/></button><motion.div key={filtered[activePhoto].id} className="lightbox-frame" initial={reducedMotion ? false : { opacity: 0, scale: .975, x: photoDirection * 24 }} animate={{ opacity: 1, scale: 1, x: 0 }} transition={{ duration: reducedMotion ? 0 : .45, ease: [.2,.75,.2,1] }}><ZoomablePhoto photo={filtered[activePhoto]}/></motion.div><button className="lightbox-nav next" aria-label="Next photograph" onClick={() => changePhoto(1)}><ChevronRight/></button></div><div className="lightbox-caption"><span>{filtered[activePhoto].recent && <span className="new-photo-label">NEW</span>}{filtered[activePhoto].title}</span><span>{activePhoto+1} / {photoCount}</span><a href={filtered[activePhoto].original} target="_blank" rel="noreferrer">View full photo <ArrowUpRight size={15}/></a></div></>}
+      {activePhoto !== null && filtered[activePhoto] && <><div className="lightbox-main"><button className="lightbox-nav previous" aria-label="Previous photograph" onClick={() => changePhoto(-1)}><ChevronLeft/></button><motion.div key={filtered[activePhoto].id} className="lightbox-frame" initial={reducedMotion ? false : { opacity: 0, scale: .975, x: photoDirection * 24 }} animate={{ opacity: 1, scale: 1, x: 0 }} transition={{ duration: reducedMotion ? 0 : .45, ease: [.2,.75,.2,1] }}><ZoomablePhoto photo={filtered[activePhoto]}/></motion.div><button className="lightbox-nav next" aria-label="Next photograph" onClick={() => changePhoto(1)}><ChevronRight/></button></div><div className="lightbox-caption"><span className="lightbox-photo-info"><span className="lightbox-photo-title">{filtered[activePhoto].recent && <span className="new-photo-label">NEW</span>}{filtered[activePhoto].title}</span><span className="lightbox-photo-category">{filtered[activePhoto].category}</span></span><span>{activePhoto+1} / {photoCount}</span><a href={filtered[activePhoto].original} target="_blank" rel="noreferrer">View full photo <ArrowUpRight size={15}/></a></div></>}
       <p className="visually-hidden" role="status" aria-live="polite" aria-atomic="true">{activePhoto !== null && filtered[activePhoto] ? `Photograph ${activePhoto + 1} of ${photoCount}. ${filtered[activePhoto].alt}.` : ''}</p>
       <p className="lightbox-hint"><span className="lightbox-keyboard-hint"><ArrowLeft size={12}/> <ArrowRight size={12}/> to browse · + / − to zoom · 0 to fit · Esc to close</span><span className="lightbox-touch-hint">Swipe to browse · Zoom, then drag to explore</span></p>
     </dialog>

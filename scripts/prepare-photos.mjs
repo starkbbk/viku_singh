@@ -25,6 +25,10 @@ for (const source of await walk(path.join(root, 'Pictures'))) {
 }
 const files = await walk(publicRoot);
 const overrides = JSON.parse(await readFile(path.join(root, 'src/data/photo-overrides.json'), 'utf8'));
+const latestUpload = JSON.parse(await readFile(path.join(root, 'src/data/latest-upload.json'), 'utf8'));
+const latestOrder = new Map(latestUpload.photoPaths.map((file, index) => [file, index]));
+if (latestOrder.size !== latestUpload.photoPaths.length) throw new Error('Duplicate photo in the latest upload');
+const duplicates = JSON.parse(await readFile(path.join(root, 'src/data/photo-duplicates.json'), 'utf8'));
 const hashes = new Set();
 const photos = [];
 const counts = {};
@@ -51,6 +55,7 @@ for (const file of files) {
   const bytes = await readFile(file);
   const hash = createHash('sha256').update(bytes).digest('hex');
   const relative = path.relative(publicRoot, file).split(path.sep).join('/');
+  if (duplicates[`/portfolio/${relative}`]) continue;
   if (relative.startsWith('Background/') && hashes.has(hash)) continue;
   hashes.add(hash);
   const folder = relative.includes('/') ? relative.split('/')[0] : 'Other';
@@ -71,15 +76,20 @@ for (const file of files) {
   }
   counts[category] = (counts[category] || 0) + 1;
   photos.push({ id, category, src:full, thumbnail:thumb, original:`/portfolio/${relative}`, width, height,
-    title: overrides[relative]?.title || `${category === 'Personal' ? 'Behind the lens' : category} / ${String(counts[category]).padStart(2,'0')}`,
+    title: overrides[relative]?.title?.trim() || `${category === 'Personal' ? 'Behind the lens' : category} / ${String(counts[category]).padStart(2,'0')}`,
     alt: overrides[relative]?.alt || descriptions[stem] || `${category} photograph ${counts[category]} by Viku Singh`,
     featured: featured.indexOf(stem),
-    recent: overrides[relative]?.recent === true,
+    recent: latestOrder.has(relative),
     uploadBatch: overrides[relative]?.uploadBatch || 0,
   });
 }
 // New uploads lead every gallery view, including category filters.
-photos.sort((a,b) => Number(b.recent) - Number(a.recent) || b.uploadBatch - a.uploadBatch || (a.featured < 0 ? 999 : a.featured) - (b.featured < 0 ? 999 : b.featured) || Number(b.original.includes('/Archive/')) - Number(a.original.includes('/Archive/')));
+for (const file of latestOrder.keys()) {
+  if (!photos.some(photo => photo.original === `/portfolio/${file}`)) throw new Error(`Missing latest upload: ${file}`);
+}
+photos.sort((a,b) => Number(b.recent) - Number(a.recent)
+  || (a.recent && b.recent ? latestOrder.get(a.original.slice('/portfolio/'.length)) - latestOrder.get(b.original.slice('/portfolio/'.length)) : 0)
+  || b.uploadBatch - a.uploadBatch || (a.featured < 0 ? 999 : a.featured) - (b.featured < 0 ? 999 : b.featured) || Number(b.original.includes('/Archive/')) - Number(a.original.includes('/Archive/')));
 await mkdir(path.join(root, 'src/data'), { recursive:true });
 await writeFile(path.join(root, 'src/data/photos.json'), JSON.stringify(photos, null, 2) + '\n');
 console.log(`Prepared ${photos.length} photographs: ${JSON.stringify(counts)}`);

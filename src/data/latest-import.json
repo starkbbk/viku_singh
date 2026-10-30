@@ -133,5 +133,125 @@
     "filename": "IMG_6701.jpg",
     "photo_path": "Event/Latest/IMG_6701.jpg",
     "category": "Events"
+  },
+  {
+    "filename": "IMG_0732.arw",
+    "photo_path": "Event/2026-10-23/IMG_0732.jpg",
+    "category": "Events",
+    "source_sha256": "7ca6a7c17c49e63e8cb8c9aa1089f00853daf1a2962f49566cfbe763b40db9cb"
+  },
+  {
+    "filename": "IMG_0341.jpg",
+    "photo_path": "Event/2026-10-23/IMG_0341.jpg",
+    "category": "Events",
+    "source_sha256": "98a16402d844d5bc9878862898150504a9a6bdc431be12651633e45c4477b973"
+  },
+  {
+    "filename": "IMG_0717.jpg",
+    "photo_path": "Event/2026-10-23/IMG_0717.jpg",
+    "category": "Events",
+    "source_sha256": "35cdc336db55b998fd74b956a108a2a42b8ac6b16c36a9ed06aa2122b58e3e17"
+  },
+  {
+    "filename": "IMG_0714.jpg",
+    "photo_path": "Event/2026-10-23/IMG_0714.jpg",
+    "category": "Events",
+    "source_sha256": "89bda343e79f518abdb2ea23b174b0fe264db0ec580f2aca3377d57bfe1035f9"
+  },
+  {
+    "filename": "IMG_7171.jpg",
+    "photo_path": "Event/2026-10-23/IMG_7171.jpg",
+    "category": "Events",
+    "source_sha256": "623a1db8f7cdeccf27cb2bf282c4a590f980436869f34a17c71889706aa786fe"
+  },
+  {
+    "filename": "IMG_6963.jpg",
+    "photo_path": "Event/2026-10-23/IMG_6963.jpg",
+    "category": "Events",
+    "source_sha256": "5c52a51b3612e4110d0b0f75d767dc01a7b6ee2e0fc2deb85ee4c180047efee8"
+  },
+  {
+    "filename": "IMG_7170.jpg",
+    "photo_path": "Event/2026-10-23/IMG_7170.jpg",
+    "category": "Events",
+    "source_sha256": "1e2cd4fc13b0585c9b7511193fb62480137d8c1f4ac36aa8211160f6f932c752"
+  },
+  {
+    "filename": "IMG_0712.jpg",
+    "photo_path": "Event/2026-10-23/IMG_0712.jpg",
+    "category": "Events",
+    "source_sha256": "35419564a479314121b222552dfed2a9cc51505536e9c967ebf410226757af17"
+  },
+  {
+    "filename": "IMG_7223.jpg",
+    "photo_path": "Event/2026-10-30/IMG_7223.jpg",
+    "category": "Events",
+    "source_sha256": "87a5b0c6bae3fd00693a3e6221485c71f5d52050e9ee6cc2a5af7d93f61a30a0"
+  },
+  {
+    "filename": "IMG_7226.jpg",
+    "photo_path": "Event/2026-10-30/IMG_7226.jpg",
+    "category": "Events",
+    "source_sha256": "6717f6db2beaad3066eb2a46f03fbc2eb6c373367d78802ac0c6ad54add59650"
+  },
+  {
+    "filename": "IMG_7237.jpg",
+    "photo_path": "Event/2026-10-30/IMG_7237.jpg",
+    "category": "Events",
+    "source_sha256": "17a18426b89d9f66835fecf24d25e8ce86db93cf3b08310a5624a6cd0c35cd02"
+  },
+  {
+    "filename": "IMG_7234.jpg",
+    "photo_path": "Event/2026-10-30/IMG_7234.jpg",
+    "category": "Events",
+    "source_sha256": "410c0596ba4fce4d774a7621341f3b9510efff8fd192c78b0999c79512f7b4b7"
+  },
+  {
+    "filename": "IMG_7227.jpg",
+    "photo_path": "Event/2026-10-30/IMG_7227.jpg",
+    "category": "Events",
+    "source_sha256": "3874866afdfc754908dbe5ec36fed500b5aadc7d6399e03255b0c42a1e216431"
+  },
+  {
+    "filename": "IMG_7224.jpg",
+    "photo_path": "Event/2026-10-30/IMG_7224.jpg",
+    "category": "Events",
+    "source_sha256": "21b46d5b821e77151292bddd33e0d7035303e811ffe8525acc2c6f3e9b73f6c2"
+  },
+  {
+    "filename": "IMG_7246.jpg",
+    "photo_path": "Event/2026-10-30/IMG_7246.jpg",
+    "category": "Events",
+    "source_sha256": "37815df77ff9fbf291ddf78a98a0d2137804bd238af48866e96d7d319400fdc0"
+  },
+  {
+    "filename": "IMG_7225.jpg",
+    "photo_path": "Event/2026-10-30/IMG_7225.jpg",
+    "category": "Events",
+    "source_sha256": "1ae3381b5bc00307d55234c62499417e187e62d8b80d7240321c347e3d2c92af"
+  },
+  {
+    "filename": "IMG_7236.jpg",
+    "photo_path": "Event/2026-10-30/IMG_7236.jpg",
+    "category": "Events",
+    "source_sha256": "d10d14cf5552b510fcbff6c8b22390c04668dd4e7e803a3b27a4fe544e76a250"
+  },
+  {
+    "filename": "IMG_7238.jpg",
+    "photo_path": "Event/2026-10-30/IMG_7238.jpg",
+    "category": "Events",
+    "source_sha256": "872fd96dff588d4bd28d7c1e404e87f1c0d873dbe3d5ecac2b971e184237263e"
+  },
+  {
+    "filename": "IMG_7242.jpg",
+    "photo_path": "Event/2026-10-30/IMG_7242.jpg",
+    "category": "Events",
+    "source_sha256": "411a408a134fa6ab2debc48e330c085465ef090c24854be24e816bb6ef844a2e"
+  },
+  {
+    "filename": "IMG_7235.jpg",
+    "photo_path": "Event/2026-10-30/IMG_7235.jpg",
+    "category": "Events",
+    "source_sha256": "3dc819536db33dd9117bbc3eef8f998ad959525f1801cdff6368c0b35ddb7e0a"
   }
 ]

@@ -23,7 +23,9 @@ export default function LatestCollections({ photos, onExplore, onOpen }: {
   const pointerY = useMotionValue(0);
   const rotateX = useSpring(pointerX, { stiffness: 140, damping: 26, mass: .65 });
   const rotateY = useSpring(pointerY, { stiffness: 140, damping: 26, mass: .65 });
-  const collection = collections[selection.collection];
+  const availableCollections = collections.filter(item => photos.some(photo => photo.recent && photo.category === item.category));
+  const collection = availableCollections[selection.collection] ?? availableCollections[0];
+  if (!collection) return null;
   const frames = photos.filter(photo => photo.recent && photo.category === collection.category);
   if (!frames.length) return null;
   const active = frames[selection.frame % frames.length];
@@ -41,7 +43,7 @@ export default function LatestCollections({ photos, onExplore, onOpen }: {
     <div className="latest-layout">
       <div className="latest-copy">
         <div className="latest-tabs" aria-label="Featured collections">
-          {collections.map((item, index) => <button key={item.category} aria-pressed={selection.collection === index} onClick={() => { reset(); setSelection({ collection: index, frame: 0 }); }}>
+          {availableCollections.map((item, index) => <button key={item.category} aria-pressed={collection.category === item.category} onClick={() => { reset(); setSelection({ collection: index, frame: 0 }); }}>
             {selection.collection === index && <motion.span className="latest-tab-background" layoutId="latest-tab" transition={reduced ? { duration: 0 } : { type: 'spring', stiffness: 300, damping: 32 }} />}
             <span>{item.category}</span>
           </button>)}
