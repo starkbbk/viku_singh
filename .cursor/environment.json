@@ -1,0 +1,11 @@
+{
+  "name": "Viku Singh",
+  "install": "set -euo pipefail\nNODE_VERSION=24.21.0\nNODE_PREFIX=/usr/local/lib/nodejs\nif ! \"$NODE_PREFIX/bin/node\" -v 2>/dev/null | grep -qx \"v${NODE_VERSION}\"; then\n  curl -fsSL \"https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-x64.tar.xz\" -o /tmp/node-v24.tar.xz\n  sudo mkdir -p \"$NODE_PREFIX\"\n  sudo tar -xJf /tmp/node-v24.tar.xz -C \"$NODE_PREFIX\" --strip-components=1\n  rm -f /tmp/node-v24.tar.xz\nfi\nsudo ln -sfn \"$NODE_PREFIX/bin/node\" /usr/local/bin/node\nsudo ln -sfn \"$NODE_PREFIX/bin/npm\" /usr/local/bin/npm\nsudo ln -sfn \"$NODE_PREFIX/bin/npx\" /usr/local/bin/npx\nsudo ln -sfn \"$NODE_PREFIX/bin/corepack\" /usr/local/bin/corepack\nprintf 'export PATH=\"/usr/local/lib/nodejs/bin:${PATH}\"\\n' | sudo tee /etc/profile.d/nodejs.sh >/dev/null\nexport PATH=\"/usr/local/lib/nodejs/bin:${PATH}\"\nhash -r\nnpm ci\n",
+  "start": "set -euo pipefail\nexport PATH=\"/usr/local/lib/nodejs/bin:${PATH}\"\ncd /workspace\nif timeout 1 bash -c 'echo >/dev/tcp/127.0.0.1/3000' 2>/dev/null; then\n  exit 0\nfi\nexec npm run dev -- --hostname 0.0.0.0 --port 3000\n",
+  "ports": [
+    {
+      "name": "web",
+      "port": 3000
+    }
+  ]
+}
