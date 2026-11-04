@@ -55,9 +55,9 @@ for (const file of files) {
   const bytes = await readFile(file);
   const hash = createHash('sha256').update(bytes).digest('hex');
   const relative = path.relative(publicRoot, file).split(path.sep).join('/');
-  if (duplicates[`/portfolio/${relative}`]) continue;
   if (relative.startsWith('Background/') && hashes.has(hash)) continue;
   hashes.add(hash);
+  if (duplicates[`/portfolio/${relative}`]) continue;
   const folder = relative.includes('/') ? relative.split('/')[0] : 'Other';
   const category = overrides[relative]?.category || ({ Event: 'Events', Fashion: 'Fashion', Street: 'Street', viku: 'Personal', Background: 'Other' })[folder] || folder;
   const stem = path.parse(file).name;
