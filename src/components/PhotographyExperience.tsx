@@ -81,7 +81,6 @@ export default function PhotographyExperience({ photos }: { photos: Photo[] }) {
   const photoCount = filtered.length;
   const visiblePhotos = filtered.slice(0, visibleLimit);
   const remainingPhotos = photoCount - visiblePhotos.length;
-  const photoBatches = Array.from({ length: Math.ceil(visiblePhotos.length / GALLERY_BATCH_SIZE) }, (_, index) => visiblePhotos.slice(index * GALLERY_BATCH_SIZE, (index + 1) * GALLERY_BATCH_SIZE));
   useEffect(() => {
     const scroller = filtersRef.current;
     const active = scroller?.querySelector<HTMLButtonElement>('[aria-pressed="true"]');
@@ -206,12 +205,9 @@ export default function PhotographyExperience({ photos }: { photos: Photo[] }) {
         <div className="archive-heading"><h2 className="motion-heading"><RevealType lines={['A closer look.']}/></h2><p data-reveal="text" data-reveal-delay="140">From the front row to the everyday.<br/>A collection of the way I see the world.</p></div>
         <div className="gallery-toolbar" data-reveal="text"><div ref={filtersRef} className="filters" aria-label="Filter photographs">{categories.map(category => <button key={category} onClick={() => { selectFilter(category); requestAnimationFrame(() => galleryRef.current?.scrollIntoView({ block: 'start', behavior: reducedMotion ? 'instant' : 'smooth' })); }} aria-pressed={selectedFilter === category} className={selectedFilter === category ? 'active' : ''}>{category === 'All' ? 'All photographs' : category}<sup>{category === 'All' ? photos.length : photos.filter(photo => category === 'New' ? photo.recent : photo.category === category).length}</sup></button>)}</div><span className="gallery-count">{visiblePhotos.length} of {photoCount} photographs</span></div>
         <div id="photo-gallery" className="gallery-batches" ref={galleryRef} key={selectedFilter}>
-          {photoBatches.map((batch, batchIndex) => <div className="photo-grid" key={batchIndex}>
-            {batch.map((photo, localIndex) => {
-              const index = batchIndex * GALLERY_BATCH_SIZE + localIndex;
-              return <AnimatedPhotoCard key={photo.id} photo={photo} index={index} onOpen={() => openPhoto(index)}/>;
-            })}
-          </div>)}
+          <div className="photo-grid">
+            {visiblePhotos.map((photo, index) => <AnimatedPhotoCard key={photo.id} photo={photo} index={index} onOpen={() => openPhoto(index)}/>)}
+          </div>
         </div>
         <div className="gallery-pagination">
           <p role="status" aria-live="polite" aria-atomic="true">Showing {visiblePhotos.length} of {photoCount} photographs</p>
